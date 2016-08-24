@@ -1,21 +1,35 @@
 // header
 .header-search{
-	background: $headerColor;
+	background-color: $headerColor;
 	height: 42px;
 	position: relative;
-	
+		&:hover{
+			background-color:$headerColorHover;
+		}
 	.logo{
 		@include size(220px, 42px);
 		background-color: $colorRedStatic;
 		display: inline-block;
 		text-align: center;
 		position: relative;
+			&:hover{
+				background-color: $colorRedHover;
+			}
+			&:active{
+				background-color: $colorRedActive;
+			}
 			&:before{
 				@include size(220px, 5px);
 				background-color: #b52933;
 				position: absolute;
 				top:42px;
 				left: 5px;
+				&:hover{
+					background-color: #9a212a;
+				}
+				&:active{
+					background-color: #8e1e26;
+				}
 			}
 		h5{
 			color:$generalFontColor;
@@ -30,25 +44,54 @@
 		font-size:$generalFontSize;
 		color: $generalFontColor;
 		padding-left: 48px;
-	}
-	i{
-		display: inline-block;
-		padding-left: 17px;
-		color: #7f838d;
-		position: absolute;
-		top: 14px;
-	}	
+		-webkit-input-placeholder {color:#ffffff;}
+		-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+		-moz-placeholder          {color:#ffffff;}/* Firefox 18- */
+		-ms-input-placeholder     {color:#ffffff;}
+		&:focus{
+			background-color: #fff;
+			& i{
+				color: $colorRedStatic;
+			}
+		}
+		}
+
+		i{
+			display: inline-block;
+			padding-left: 17px;
+			color: $colorIkon;
+			position: absolute;
+			top: 14px;
+			&:hover{
+				color: #fff;
+			}
+			&:active{
+				color:$colorIkonActive;
+			}
+		}
+		
 	.condition{
-		display: inline-block;
-		@include size(145px, 42px);
-		text-align: center;
+		.block{
+			@include size(145px, 42px);
+			&:active{
+				background-color: $headerColorActive;
+			}
+		}
 		h6 {
-			color:$generalFontColor;
-			font-size:$generalFontSize;
+			color: $generalFontColor;
+			font-size: $generalFontSize;
 			padding-left: 43px;
 		}
 		&.order{
-			background-color: #63a63e;
+			@include size(145px, 42px);
+			background-color: $colorHeaderOrder;
+			text-align: center;
+			&:hover{
+				background-color: $colorHeaderOrderHover;
+				}
+			&:active{
+				background-color: $colorHeaderOrderActive;
+				}
 			h6 {			
 				padding-left: 0;
 			}
