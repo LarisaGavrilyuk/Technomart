@@ -1,0 +1,60 @@
+// header
+.header-search{
+	background: $headerColor;
+	height: 42px;
+	position: relative;
+	
+	.logo{
+		@include size(220px, 42px);
+		background-color: $colorRedStatic;
+		display: inline-block;
+		text-align: center;
+		position: relative;
+			&:before{
+				@include size(220px, 5px);
+				background-color: #b52933;
+				position: absolute;
+				top:42px;
+				left: 5px;
+			}
+		h5{
+			color:$generalFontColor;
+			font-size: $fontSizeH5;
+			font-family: $fontFamilyH5;
+		}
+	}
+	input[type="text"]{
+		@include size(270px, 42px);
+		display: inline-block;
+		background-color: transparent;
+		font-size:$generalFontSize;
+		color: $generalFontColor;
+		padding-left: 48px;
+	}
+	i{
+		display: inline-block;
+		padding-left: 17px;
+		color: #7f838d;
+		position: absolute;
+		top: 14px;
+	}	
+	.condition{
+		display: inline-block;
+		@include size(145px, 42px);
+		text-align: center;
+		h6 {
+			color:$generalFontColor;
+			font-size:$generalFontSize;
+			padding-left: 43px;
+		}
+		&.order{
+			background-color: #63a63e;
+			h6 {			
+				padding-left: 0;
+			}
+		}
+	}
+}
+//footer
+
+//main

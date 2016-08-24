@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* line 4, ../sass/symbols-technomart-codes.scss */
+.icon-left:before {
+  content: '\3c';
+}
+
+/* '&lt;' */
+/* line 5, ../sass/symbols-technomart-codes.scss */
+.icon-right:before {
+  content: '\3e';
+}
+
+/* '&gt;' */
+/* line 6, ../sass/symbols-technomart-codes.scss */
+.icon-basket:before {
+  content: '\62';
+}
+
+/* 'b' */
+/* line 7, ../sass/symbols-technomart-codes.scss */
+.icon-facebook:before {
+  content: '\66';
+}
+
+/* 'f' */
+/* line 8, ../sass/symbols-technomart-codes.scss */
+.icon-twitter:before {
+  content: '\74';
+}
+
+/* 't' */
+/* line 9, ../sass/symbols-technomart-codes.scss */
+.icon-vk:before {
+  content: '\76';
+}
+
+/* 'v' */
+/* line 10, ../sass/symbols-technomart-codes.scss */
+.icon-up:before {
+  content: '\2c4';
+}
+
+/* '˄' */
+/* line 11, ../sass/symbols-technomart-codes.scss */
+.icon-down:before {
+  content: '\2c5';
+}
+
+/* '˅' */
+/* line 12, ../sass/symbols-technomart-codes.scss */
+.icon-left-big:before {
+  content: '\2190';
+}
+
+/* '←' */
+/* line 13, ../sass/symbols-technomart-codes.scss */
+.icon-right-big:before {
+  content: '\2192';
+}
+
+/* '→' */
+/* line 14, ../sass/symbols-technomart-codes.scss */
+.icon-login:before {
+  content: '\2386';
+}
+
+/* '⎆' */
+/* line 15, ../sass/symbols-technomart-codes.scss */
+.icon-logout:before {
+  content: '\241b';
+}
+
+/* '␛' */
+/* line 16, ../sass/symbols-technomart-codes.scss */
+.icon-up-dir:before {
+  content: '\25b2';
+}
+
+/* '▲' */
+/* line 17, ../sass/symbols-technomart-codes.scss */
+.icon-down-dir:before {
+  content: '\25bc';
+}
+
+/* '▼' */
+/* line 18, ../sass/symbols-technomart-codes.scss */
+.icon-circle:before {
+  content: '\25cb';
+}
+
+/* '○' */
+/* line 19, ../sass/symbols-technomart-codes.scss */
+.icon-circle-dot:before {
+  content: '\25cf';
+}
+
+/* '●' */
+/* line 20, ../sass/symbols-technomart-codes.scss */
+.icon-star:before {
+  content: '\2605';
+}
+
+/* '★' */
+/* line 21, ../sass/symbols-technomart-codes.scss */
+.icon-check-off:before {
+  content: '\2610';
+}
+
+/* '☐' */
+/* line 22, ../sass/symbols-technomart-codes.scss */
+.icon-check-on:before {
+  content: '\2611';
+}
+
+/* '☑' */
+/* line 23, ../sass/symbols-technomart-codes.scss */
+.icon-youtube:before {
+  content: '\f39e';
+}
+
+/* '' */
+/* line 24, ../sass/symbols-technomart-codes.scss */
+.icon-home:before {
+  content: '🏠';
+}
+
+/* '\1f3e0' */
+/* line 25, ../sass/symbols-technomart-codes.scss */
+.icon-user:before {
+  content: '👨';
+}
+
+/* '\1f468' */
+/* line 26, ../sass/symbols-technomart-codes.scss */
+.icon-phone:before {
+  content: '📞';
+}
+
+/* '\1f4de' */
+/* line 27, ../sass/symbols-technomart-codes.scss */
+.icon-instagramm:before {
+  content: '📷';
+}
+
+/* '\1f4f7' */
+/* line 28, ../sass/symbols-technomart-codes.scss */
+.icon-search:before {
+  content: '🔍';
+}
+
+/* '\1f50d' */
+/* line 29, ../sass/symbols-technomart-codes.scss */
+.icon-bookmark:before {
+  content: '🔖';
+}
+
+/* '\1f516' */

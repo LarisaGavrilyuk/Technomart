@@ -1,0 +1,26 @@
+.vertical-align {
+	&:before {
+		display: inline-block;
+		content: '';
+		height: 100%;
+		vertical-align: middle;
+		margin-left: -5px;
+	}
+	& > *{
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+ %btn{
+	@include size(150px, 42px);
+	background-color: #63a63e;
+	text-align: center;
+	font-size: $generalFontSize;
+}
+.btn{
+ 	@extend %btn;
+}
+// dasabled
+
+//input
