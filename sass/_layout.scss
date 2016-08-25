@@ -1,6 +1,11 @@
 // header
+body{
+	width: 100%;
+}
+
 .header-search{
 	background-color: $headerColor;
+	width: 100%;
 	height: 42px;
 	position: relative;
 		&:hover{
@@ -9,7 +14,6 @@
 	.logo{
 		@include size(220px, 42px);
 		background-color: $colorRedStatic;
-		display: inline-block;
 		text-align: center;
 		position: relative;
 			&:hover{
@@ -31,31 +35,43 @@
 					background-color: #8e1e26;
 				}
 			}
+
 		h5{
+			padding-top: 8px;
 			color:$generalFontColor;
 			font-size: $fontSizeH5;
 			font-family: $fontFamilyH5;
 		}
 	}
-	input[type="text"]{
-		@include size(270px, 42px);
-		display: inline-block;
-		background-color: transparent;
-		font-size:$generalFontSize;
-		color: $generalFontColor;
-		padding-left: 48px;
-		-webkit-input-placeholder {color:#ffffff;}
-		-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
-		-moz-placeholder          {color:#ffffff;}/* Firefox 18- */
-		-ms-input-placeholder     {color:#ffffff;}
-		&:focus{
-			background-color: #fff;
-			& i{
-				color: $colorRedStatic;
+	form{
+		position: relative;
+		button{
+			i{
+				left: 17px;
+				padding-left: 0;
 			}
 		}
+		input[type="text"]{
+			@include size(270px, 42px);
+			display: inline-block;
+			background-color: transparent;
+			font-size:$generalFontSize;
+			color: #000;
+			padding-left: 48px;
+			-webkit-input-placeholder {color:#ffffff;}
+			-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+			-moz-placeholder          {color:#ffffff;}/* Firefox 18- */
+			-ms-input-placeholder     {color:#ffffff;}
+			&:focus{
+				background-color: #fff;
+				&:focus+ button {
+					i{
+						color: $colorRedStatic;
+					}
+				}
+			}
 		}
-
+	}	
 		i{
 			display: inline-block;
 			padding-left: 17px;
@@ -77,10 +93,14 @@
 				background-color: $headerColorActive;
 			}
 		}
-		h6 {
+		span {
+			display: inline-block;
 			color: $generalFontColor;
 			font-size: $generalFontSize;
 			padding-left: 43px;
+			span{
+				padding-left: 3px;
+			}
 		}
 		&.order{
 			@include size(145px, 42px);
@@ -92,11 +112,128 @@
 			&:active{
 				background-color: $colorHeaderOrderActive;
 				}
-			h6 {			
+			span {			
 				padding-left: 0;
 			}
 		}
 	}
+}
+.header-contact{
+	height: 278px;
+	background-color: $bodyColor;
+	.row{
+		padding-left: 50px;
+	}
+	.text{
+		padding-top: 55px;
+		span{
+			color: $colorRedStatic;
+			font: 16px/23px $fontFamilyItalik;
+		}
+	}
+	p{
+		font-size: 16px;
+		color: #32425c;
+		padding: 10px 0 0 17px;
+	}	
+	.phone{
+		@include size(220px, 45px);
+		border: 2px solid #fff;
+		padding-left: 12px;
+		margin-top: 45px;
+		i{
+			color: #b7bfc8;
+			font-size: 21px;
+		}
+		span{
+			color: #e9292a;
+			font-size: 21px;
+			padding-left: 5px;
+		}
+	}
+	.signIn{
+		@include size(120px, 45px);
+		margin-top: 45px;
+		background-color: #fff;
+		padding-left: 12px;
+		position: relative;
+		button{
+			position: absolute;
+			top: 12px;
+			left: 16px;
+			background-color: transparent;
+			i{
+				color: #c5c5c5;
+				font-size: 21px;
+			}
+		}
+		span{
+			display: inline-block;
+			font: 21px $generalFont;
+			padding-left: 30px;
+			&:hover{
+				color: $colorRedStatic;
+				&:hover+button{
+					i{
+						color: $colorHeaderNav;
+					}
+				}	
+			}
+			&:active{
+				color: #c9c9c9;
+				&:active+button{
+					i{
+						color: #c5c5c5;
+					}
+				}	
+			}
+		}
+		&.twu{
+			width: 145px;
+			span{
+				padding-left: 9px;
+			}
+		}
+	}
+}
+.header-nav{
+	background-color: $colorHeaderNav;
+	margin-top: 30px;
+	position: relative;
+	ul{
+		@include size(910px, 55px);
+		&:before{
+			@include size(910px, 5px);
+			background-color: $headerColor;
+			position: absolute;
+			top: 55px;
+			left: 5px;
+		}
+		li{
+			display: inline-block;
+			text-align: center;
+			width: 127px;
+		
+			a{
+				padding: 10px 5px;
+				height: 55px;
+				&:hover{
+					background-color: $headerColor;
+				}
+				&:focus{
+					background-color: #1d2739;
+					span{
+						color: #7a7e85;
+					}
+				}
+				span{
+					font: $generalFontSize $generalFont;
+					color: $generalFontColor;
+				}
+			}
+		}
+	}
+	
 }
 //footer
 
