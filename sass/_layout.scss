@@ -103,7 +103,6 @@ body{
 			}
 		}
 		&.order{
-			@include size(145px, 42px);
 			background-color: $colorHeaderOrder;
 			text-align: center;
 			&:hover{
@@ -112,7 +111,11 @@ body{
 			&:active{
 				background-color: $colorHeaderOrderActive;
 				}
-			span {			
+			a{
+				@include size(145px, 42px);
+			}
+			span {	
+				margin-top: 10px;		
 				padding-left: 0;
 			}
 		}
@@ -121,11 +124,8 @@ body{
 .header-contact{
 	height: 278px;
 	background-color: $bodyColor;
-	.row{
-		padding-left: 50px;
-	}
 	.text{
-		padding-top: 55px;
+		padding: 55px 0 0 50px;
 		span{
 			color: $colorRedStatic;
 			font: 16px/23px $fontFamilyItalik;
@@ -154,87 +154,96 @@ body{
 	.signIn{
 		@include size(120px, 45px);
 		margin-top: 45px;
+		margin-left: 15px;
 		background-color: #fff;
-		padding-left: 12px;
 		position: relative;
-		button{
-			position: absolute;
-			top: 12px;
-			left: 16px;
-			background-color: transparent;
-			i{
-				color: #c5c5c5;
-				font-size: 21px;
-			}
-		}
-		span{
+		a{
 			display: inline-block;
-			font: 21px $generalFont;
-			padding-left: 30px;
+			line-height: 45px;
+			width: 100%;
+			text-align: center;
 			&:hover{
-				color: $colorRedStatic;
-				&:hover+button{
+				span{
+					color: $colorRedStatic;
+				}
+				span + button{
 					i{
 						color: $colorHeaderNav;
 					}
 				}	
 			}
 			&:active{
-				color: #c9c9c9;
-				&:active+button{
-					i{
-						color: #c5c5c5;
-					}
-				}	
+				span{
+					color: #c9c9c9;
+					&:active+button{
+						i{
+							color: #c5c5c5;
+						}
+					}	
+				}
+			}
+			button{
+				position: absolute;
+				left: 16px;
+				background-color: transparent;
+				i{
+					color: #c5c5c5;
+					font-size: 21px;
+					display: inline-block;
+					line-height: 45px;
+				}
+			}
+			span{
+				display: inline-block;
+				line-height: 45px;
+				font: 21px $generalFont;
+				padding-left: 30px;
+				margin-top: 10px;
 			}
 		}
 		&.twu{
 			width: 145px;
-			span{
-				padding-left: 9px;
-			}
-		}
-	}
-}
-.header-nav{
-	background-color: $colorHeaderNav;
-	margin-top: 30px;
-	position: relative;
-	ul{
-		@include size(910px, 55px);
-		&:before{
-			@include size(910px, 5px);
-			background-color: $headerColor;
-			position: absolute;
-			top: 55px;
-			left: 5px;
-		}
-		li{
-			display: inline-block;
-			text-align: center;
-			width: 127px;
-		
+			padding-left: 0;
 			a{
-				padding: 10px 5px;
-				height: 55px;
-				&:hover{
-					background-color: $headerColor;
-				}
-				&:focus{
-					background-color: #1d2739;
-					span{
-						color: #7a7e85;
-					}
-				}
+				padding-left: 0;
+				width: 100%;
 				span{
-					font: $generalFontSize $generalFont;
-					color: $generalFontColor;
+					padding-left: 0;
 				}
 			}
 		}
 	}
-	
 }
+ul{
+	@include size(940px, 60px);
+	background-color: $colorHeaderNav;
+	border-bottom: 5px solid $headerColor;
+	margin: 35px 10px 0 10px;
+	li{
+		display: inline-block;
+		text-align: center;
+		a{
+			padding: 0 32px;
+			display: inline-block;
+			line-height: 55px;
+			&:hover{
+				background-color: $headerColor;
+			}
+			&:focus{
+				background-color: #1d2739;
+				span{
+					color: #7a7e85;
+				}
+			}
+			span{
+				font: $generalFontSize $generalFont;
+				color: $generalFontColor;
+			}
+		}
+	}
+}
+
+
 //footer
 
 //main
