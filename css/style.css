@@ -10016,3 +10016,166 @@ ul li a span {
   font: 17px "cuprumregular";
   color: #fff;
 }
+
+/* line 248, ../sass/_layout.scss */
+.footer-nav {
+  background-color: #32425c;
+  width: 100%;
+  height: 193px;
+}
+/* line 252, ../sass/_layout.scss */
+.footer-nav .logo {
+  width: 220px;
+  height: 63px;
+  background-color: #ee3643;
+  text-align: center;
+  position: relative;
+}
+/* line 257, ../sass/_layout.scss */
+.footer-nav .logo:before {
+  width: 220px;
+  height: 5px;
+  background-color: #b52933;
+  position: absolute;
+  top: 63px;
+  left: 5px;
+}
+/* line 264, ../sass/_layout.scss */
+.footer-nav .logo h5 {
+  padding-top: 20px;
+  color: #fff;
+  font-size: 30px;
+  font-family: "cuprumbold";
+}
+/* line 271, ../sass/_layout.scss */
+.footer-nav ul {
+  width: 700px;
+  height: 50px;
+  border-bottom: none;
+  margin: 20px 0 0 0;
+  padding-left: 120px;
+}
+/* line 277, ../sass/_layout.scss */
+.footer-nav ul li {
+  display: inline-block;
+}
+/* line 279, ../sass/_layout.scss */
+.footer-nav ul li a {
+  padding: 0px 25px;
+}
+/* line 281, ../sass/_layout.scss */
+.footer-nav ul li a:hover {
+  background: transparent;
+}
+/* line 284, ../sass/_layout.scss */
+.footer-nav ul li a:focus {
+  background: transparent;
+}
+/* line 286, ../sass/_layout.scss */
+.footer-nav ul li a:focus span {
+  color: #8f97a3;
+}
+/* line 291, ../sass/_layout.scss */
+.footer-nav ul li a span {
+  font-size: 18px;
+  color: #f1f5f7;
+}
+/* line 294, ../sass/_layout.scss */
+.footer-nav ul li a span:hover {
+  text-decoration: underline;
+}
+/* line 302, ../sass/_layout.scss */
+.footer-nav .text {
+  margin-top: 15px;
+}
+/* line 304, ../sass/_layout.scss */
+.footer-nav .text span {
+  font: 18px "cuprumregular";
+  color: #f1f5f7;
+}
+/* line 310, ../sass/_layout.scss */
+.footer-nav .nav-twu {
+  margin-top: 0;
+  padding-left: 140px;
+}
+/* line 313, ../sass/_layout.scss */
+.footer-nav .nav-twu span {
+  color: #ffd180;
+}
+/* line 318, ../sass/_layout.scss */
+.footer-nav .nav-twu a:focus span {
+  color: #ab936f;
+}
+
+/* line 325, ../sass/_layout.scss */
+.footer-about-us {
+  background-color: #293449;
+  width: 100%;
+  height: 108px;
+}
+/* line 329, ../sass/_layout.scss */
+.footer-about-us .text {
+  margin-top: 35px;
+}
+/* line 331, ../sass/_layout.scss */
+.footer-about-us .text span {
+  color: #fff;
+  font: 16px "cuprumregular";
+}
+/* line 336, ../sass/_layout.scss */
+.footer-about-us .cocial {
+  border-bottom: none;
+  background-color: transparent;
+  width: 100%;
+  height: 40px;
+  margin: 35px 10px 0 60px;
+}
+/* line 342, ../sass/_layout.scss */
+.footer-about-us .cocial li {
+  border-radius: 50%;
+  background-color: #212a3a;
+}
+/* line 345, ../sass/_layout.scss */
+.footer-about-us .cocial li a {
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+/* line 353, ../sass/_layout.scss */
+.footer-about-us .cocial li a i {
+  color: #fff;
+  font-size: 18px;
+}
+/* line 357, ../sass/_layout.scss */
+.footer-about-us .cocial li a:hover {
+  background-color: #ee3643;
+}
+/* line 360, ../sass/_layout.scss */
+.footer-about-us .cocial li a:focus {
+  background-color: #ee3643;
+}
+/* line 366, ../sass/_layout.scss */
+.footer-about-us .text-twu {
+  margin-top: 35px;
+}
+/* line 368, ../sass/_layout.scss */
+.footer-about-us .text-twu span {
+  color: #fff;
+  font: 16px "cuprumregular";
+}
+/* line 373, ../sass/_layout.scss */
+.footer-about-us .text-twu a span {
+  color: #ffd180;
+}
+/* line 377, ../sass/_layout.scss */
+.footer-about-us .text-twu a:hover span {
+  text-decoration: underline;
+}
+/* line 382, ../sass/_layout.scss */
+.footer-about-us .text-twu a:focus span {
+  color: #ee3643;
+}

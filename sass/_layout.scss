@@ -245,5 +245,147 @@ ul{
 
 
 //footer
+.footer-nav{
+	background-color: $colorHeaderNav;
+	width: 100%;
+	height: 193px;
+	.logo{
+		@include size(220px, 63px);
+		background-color: $colorRedStatic;
+		text-align: center;
+		position: relative;
+		&:before{
+			@include size(220px, 5px);
+			background-color: #b52933;
+			position: absolute;
+			top:63px;
+			left: 5px;
+		}
+		h5{
+			padding-top: 20px;
+			color:$generalFontColor;
+			font-size: 30px;
+			font-family: $fontFamilyH5;
+		}
+	}
+	ul{
+		@include size(700px, 50px);
+		border-bottom: none;
+		margin: 20px 0 0 0;
+		padding-left: 120px;
 
+		li{
+			display: inline-block;
+			a{
+				padding: 0px 25px;
+			&:hover{
+				background: transparent;
+			}
+			&:focus{
+				background: transparent;
+				span{
+					color: #8f97a3;
+					
+				}
+			}
+				span{
+					font-size: 18px;
+					color: #f1f5f7;
+				&:hover{
+					text-decoration: underline;
+				}
+				}
+			}
+		}
+		
+	}
+	.text{
+		margin-top: 15px;
+		span{
+			font: 18px $generalFont;
+			color: #f1f5f7;
+		}
+	}
+	
+	.nav-twu{
+		margin-top: 0;
+		padding-left: 140px;
+		span{
+			color: #ffd180;
+		}
+		a{
+		&:focus{
+			span{
+				color: #ab936f;
+			}
+		}
+		}
+	}
+}
+.footer-about-us{
+	background-color: $headerColor;
+	width: 100%;
+	height: 108px;
+	.text{
+		margin-top: 35px;
+		span{
+			color: $generalFontColor;
+			font: 16px $generalFont;
+		}
+	}
+	.cocial{
+		border-bottom: none;
+		background-color: transparent;
+		width: 100%;
+		height: 40px;
+		margin: 35px 10px 0 60px;
+		li{
+			border-radius: 50%;
+			background-color: $headerColorHover;
+			a{
+				display: inline-block;
+				text-align: center;
+				padding: 0;
+				line-height: 40px;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				i{
+					color: #fff;
+					font-size: 18px;
+				}
+			&:hover{
+				background-color: $colorRedStatic;
+			}
+			&:focus{
+				background-color: $colorRedStatic;
+			}
+			}
+		}
+	}
+	.text-twu{
+		margin-top: 35px;
+		span{
+			color: $generalFontColor;
+			font: 16px $generalFont;
+		}
+		a{
+			span{
+				color: #ffd180;
+			}
+		&:hover{
+			span{
+				text-decoration: underline;
+			}
+		}
+		&:focus{
+			span{
+				color: $colorRedStatic;
+			}
+		}
+		}
+	}
+
+	
+}
 //main
