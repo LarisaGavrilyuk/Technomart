@@ -1,10 +1,10 @@
 // header
-body{
-	width: 100%;
-}
-
+-webkit-input-placeholder {color:#ffffff;}
+-moz-placeholder          {color:#ffffff;}
+-moz-placeholder          {color:#ffffff;}
+-ms-input-placeholder     {color:#ffffff;}
 .header-search{
-	background-color: $headerColor;
+	background-color: $generalColorDarkBlue;
 	width: 100%;
 	height: 42px;
 	position: relative;
@@ -12,135 +12,136 @@ body{
 			background-color:$headerColorHover;
 		}
 	.logo{
-		@include size(220px, 42px);
-		background-color: $colorRedStatic;
-		text-align: center;
-		position: relative;
+		@extend %logo;
+		&:hover{
+			background-color: $colorRedHover;
+		}
+		&:active{
+			background-color: $colorRedActive;
+		}
+		&:before{
+			@include size(220px, 5px);
+			background-color: #b52933;
+			position: absolute;
+			top:42px;
+			left: 5px;
 			&:hover{
-				background-color: $colorRedHover;
+				background-color: #9a212a;
 			}
 			&:active{
-				background-color: $colorRedActive;
+				background-color: #8e1e26;
 			}
-			&:before{
-				@include size(220px, 5px);
-				background-color: #b52933;
-				position: absolute;
-				top:42px;
-				left: 5px;
-				&:hover{
-					background-color: #9a212a;
-				}
-				&:active{
-					background-color: #8e1e26;
-				}
-			}
-
-		h5{
-			padding-top: 8px;
+		}
+		span{
 			color:$generalFontColor;
-			font-size: $fontSizeH5;
-			font-family: $fontFamilyH5;
+			font-size: 2.4em;
+			font-family: $fontFamilyTitle;
 		}
 	}
-	form{
+	.search{
+		padding-left: 17px;
 		position: relative;
 		button{
+			position: absolute;
+			top: 14px;
+			background-color: transparent;
 			i{
-				left: 17px;
-				padding-left: 0;
+				color: #717681;
+			}
+			&:active{
+				i{
+					color:$colorIkonActive;
+				}
 			}
 		}
 		input[type="text"]{
 			@include size(270px, 42px);
 			display: inline-block;
 			background-color: transparent;
-			font-size:$generalFontSize;
+			font-size: 1.7em;
 			color: #000;
-			padding-left: 48px;
-			-webkit-input-placeholder {color:#ffffff;}
-			-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
-			-moz-placeholder          {color:#ffffff;}/* Firefox 18- */
-			-ms-input-placeholder     {color:#ffffff;}
+			padding-left: 32px;
+			&:hover{
+				background-color: $headerColorHover;
+				&:hover+ button{
+					i{
+						color: #fff;
+					}
+				}
+			}
+			
 			&:focus{
 				background-color: #fff;
 				&:focus+ button {
 					i{
-						color: $colorRedStatic;
+						color: $generalcolorRed;
 					}
 				}
 			}
 		}
-	}	
-		i{
-			display: inline-block;
-			padding-left: 17px;
-			color: $colorIkon;
-			position: absolute;
-			top: 14px;
-			&:hover{
-				color: #fff;
-			}
-			&:active{
-				color:$colorIkonActive;
-			}
-		}
+	}
 		
 	.condition{
-		.block{
-			@include size(145px, 42px);
+		@include size(140px, 42px);
+		display: inline-block;
+		line-height: 42px;
+		font-size: 1.7em;
+		padding-left: 17px;
+			&:hover{
+				i{
+				color: #fff;
+				}
+			}
 			&:active{
 				background-color: $headerColorActive;
+				i{
+					color:$colorIkonActive;
+				}
 			}
+		
+		i{
+			color: $colorIkon;
+			vertical-align: middle;
 		}
 		span {
-			display: inline-block;
 			color: $generalFontColor;
-			font-size: $generalFontSize;
-			padding-left: 43px;
+			vertical-align: middle;
+			padding-left: 10px;
 			span{
 				padding-left: 3px;
 			}
 		}
 		&.order{
 			background-color: $colorHeaderOrder;
-			text-align: center;
+			line-height: 42px;
+			width: 150px;
 			&:hover{
 				background-color: $colorHeaderOrderHover;
-				}
+			}
 			&:active{
 				background-color: $colorHeaderOrderActive;
-				}
-			a{
-				@include size(145px, 42px);
 			}
-			span {	
-				margin-top: 10px;		
+			span{
 				padding-left: 0;
 			}
 		}
 	}
 }
 .header-contact{
-	height: 278px;
+	padding: 45px 0 60px 0;
 	background-color: $bodyColor;
 	.text{
-		padding: 55px 0 0 50px;
+		padding-left: 50px;
 		span{
-			color: $colorRedStatic;
+			color: $generalcolorRed;
 			font: 16px/23px $fontFamilyItalik;
 		}
 	}
-	p{
-		font-size: 16px;
-		color: #32425c;
-		padding: 10px 0 0 17px;
-	}	
 	.phone{
 		@include size(220px, 45px);
 		border: 2px solid #fff;
 		padding-left: 12px;
-		margin-top: 45px;
+		
 		i{
 			color: #b7bfc8;
 			font-size: 21px;
@@ -151,109 +152,88 @@ body{
 			padding-left: 5px;
 		}
 	}
-	.signIn{
-		@include size(120px, 45px);
-		margin-top: 45px;
-		margin-left: 15px;
-		background-color: #fff;
-		position: relative;
-		a{
-			display: inline-block;
-			line-height: 45px;
-			width: 100%;
-			text-align: center;
-			&:hover{
-				span{
-					color: $colorRedStatic;
-				}
-				span + button{
-					i{
-						color: $colorHeaderNav;
-					}
-				}	
-			}
-			&:active{
-				span{
-					color: #c9c9c9;
-					&:active+button{
-						i{
-							color: #c5c5c5;
-						}
-					}	
-				}
-			}
-			button{
-				position: absolute;
-				left: 16px;
-				background-color: transparent;
-				i{
-					color: #c5c5c5;
-					font-size: 21px;
-					display: inline-block;
-					line-height: 45px;
-				}
-			}
+	p{
+		font-size: 16px;
+		color: #32425c;
+		padding: 10px 0 0 17px;
+	}	
+	.wite-btn{
+		@extend %wite-btn;
+		width: 120px;
+		&:hover{
 			span{
-				display: inline-block;
-				line-height: 45px;
-				font: 21px $generalFont;
-				padding-left: 30px;
-				margin-top: 10px;
+				color: $generalcolorRed;
+			}
+			i{
+				color: $colorHeaderNav;
 			}
 		}
-		&.twu{
-			width: 145px;
+		&:active{
+			span{
+				color: #c9c9c9;
+			} 		
+			i{
+				color: #c5c5c5;
+			}
+		}
+		i{
+			color: #c5c5c5;
+			font-size: 1em;
+			vertical-align: middle;
+		}
+		span{
+			vertical-align: middle;
+		}
+		&.registration{
+			@extend %wite-btn;
 			padding-left: 0;
-			a{
-				padding-left: 0;
-				width: 100%;
-				span{
-					padding-left: 0;
-				}
-			}
-		}
-	}
-}
-ul{
-	@include size(940px, 60px);
-	background-color: $colorHeaderNav;
-	border-bottom: 5px solid $headerColor;
-	margin: 35px 10px 0 10px;
-	li{
-		display: inline-block;
-		text-align: center;
-		a{
-			padding: 0 32px;
-			display: inline-block;
-			line-height: 55px;
-			&:hover{
-				background-color: $headerColor;
-			}
-			&:focus{
-				background-color: #1d2739;
-				span{
-					color: #7a7e85;
-				}
-			}
+			line-height: 45px;
 			span{
-				font: $generalFontSize $generalFont;
-				color: $generalFontColor;
+		 		padding-left: 0;
+			}
+		}
+	}
+
+	ul{
+		width: 100%;
+		height: 60px;
+		background-color: $colorHeaderNav;
+		border-bottom: 5px solid $generalColorDarkBlue;
+		margin-top: 35px;
+		text-align: center;
+
+		li{
+			display: inline-block;
+			text-align: center;
+			a{
+				padding: 0 34px;
+				display: inline-block;
+				line-height: 55px;
+				&:hover{
+					background-color: $generalColorDarkBlue;
+				}
+				&:focus{
+					background-color: #1d2739;
+					span{
+						color: #7a7e85;
+					}
+				}
+				span{
+					font: 1.7em $generalFont;
+					color: $generalFontColor;
+				}
 			}
 		}
 	}
 }
-
-
 //footer
 .footer-nav{
 	background-color: $colorHeaderNav;
 	width: 100%;
-	height: 193px;
+	padding-bottom: 50px;
 	.logo{
-		@include size(220px, 63px);
-		background-color: $colorRedStatic;
-		text-align: center;
-		position: relative;
+		@extend %logo;
+		line-height: 63px;
 		&:before{
 			@include size(220px, 5px);
 			background-color: #b52933;
@@ -261,22 +241,21 @@ ul{
 			top:63px;
 			left: 5px;
 		}
-		h5{
-			padding-top: 20px;
+		span{
 			color:$generalFontColor;
-			font-size: 30px;
-			font-family: $fontFamilyH5;
+			font-size: 3em;
+			font-family: $fontFamilyTitle;
 		}
 	}
 	ul{
-		@include size(700px, 50px);
+		width: 100%;
 		border-bottom: none;
 		margin: 20px 0 0 0;
-		padding-left: 120px;
-
+		text-align: right;
 		li{
 			display: inline-block;
 			a{
+				line-height: 50px;
 				padding: 0px 25px;
 			&:hover{
 				background: transparent;
@@ -307,9 +286,8 @@ ul{
 		}
 	}
 	
-	.nav-twu{
+	.stock{
 		margin-top: 0;
-		padding-left: 140px;
 		span{
 			color: #ffd180;
 		}
@@ -323,69 +301,36 @@ ul{
 	}
 }
 .footer-about-us{
-	background-color: $headerColor;
+	background-color: $generalColorDarkBlue;
 	width: 100%;
-	height: 108px;
-	.text{
-		margin-top: 35px;
-		span{
-			color: $generalFontColor;
-			font: 16px $generalFont;
-		}
+	padding: 35px 0;
+	span{
+		color: $generalFontColor;
+		font: 16px $generalFont;
 	}
-	.cocial{
+	.social{
 		border-bottom: none;
 		background-color: transparent;
-		width: 100%;
-		height: 40px;
-		margin: 35px 10px 0 60px;
+		text-align: center;
 		li{
-			border-radius: 50%;
-			background-color: $headerColorHover;
+			display: inline-block;
 			a{
 				display: inline-block;
-				text-align: center;
-				padding: 0;
-				line-height: 40px;
 				width: 40px;
 				height: 40px;
+				color: #fff;
+				font-size: 1.8em;
+				line-height: 40px;
 				border-radius: 50%;
-				i{
-					color: #fff;
-					font-size: 18px;
+				background-color: $headerColorHover;
+				&:hover{
+					background-color: $generalcolorRed;
 				}
-			&:hover{
-				background-color: $colorRedStatic;
-			}
-			&:focus{
-				background-color: $colorRedStatic;
-			}
+				&:focus{
+					background-color: $generalcolorRed;
+				}
 			}
 		}
 	}
-	.text-twu{
-		margin-top: 35px;
-		span{
-			color: $generalFontColor;
-			font: 16px $generalFont;
-		}
-		a{
-			span{
-				color: #ffd180;
-			}
-		&:hover{
-			span{
-				text-decoration: underline;
-			}
-		}
-		&:focus{
-			span{
-				color: $colorRedStatic;
-			}
-		}
-		}
-	}
-
-	
 }
 //main

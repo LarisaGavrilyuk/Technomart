@@ -12,13 +12,42 @@
 	}
 }
 
- %btn{
-	@include size(150px, 42px);
-	background-color: #63a63e;
+%wite-btn{
+	@include size(150px, 45px);
+	background-color: #fff;
 	text-align: center;
-	font-size: $generalFontSize;
+	font: 2.1em $generalFont;
+	line-height: 45px;
 }
-
+%logo{
+	display: inline-block;
+	width: 220px;
+	background-color: $generalcolorRed;
+	text-align: center;
+	line-height: 42px;
+	position: relative;
+}
+.contacts{
+	span{
+		color: $generalFontColor;
+		font: 1.6em $generalFont;
+	}
+	a{
+		span{
+			color: #ffd180;
+		}
+	&:hover{
+		span{
+			text-decoration: underline;
+		}
+	}
+	&:focus{
+		span{
+			color: $generalcolorRed;
+		}
+	}
+	}
+}
 // dasabled
 
 //input
