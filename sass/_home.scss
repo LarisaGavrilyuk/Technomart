@@ -1,0 +1,160 @@
+// блок карусель с блоками предложений
+.carusel-inner-wrap{
+	padding-top: 60px;
+
+	.category-block{
+			height: 123px;
+			padding: 23px 25px;
+			overflow: hidden;
+			position: relative;
+			margin-bottom: 20px;
+			span{
+				font: 2.4em $fontFamilyTitle;
+				color: #fff;
+			}
+			.btn-category{
+					display: inline-block;
+					@include size(135px, 38px);
+					background: rgba(0, 0, 0, .1);
+					color: #fff;
+					font: 1.4em $generalFont;
+					text-transform: uppercase;
+					line-height: 38px;
+					text-align: center;
+					margin-top: 13px;
+					border-radius: 3px;
+						&:hover{
+							background: rgba(0, 0, 0, .2);
+						}
+						&:active{
+							background: rgba(0, 0, 0, .3);
+						}
+			}
+			&:after{
+					@extend %beforeStandartStyle;
+					position: absolute;
+					top: 50%;
+					background: url('../img/sprite.png') no-repeat;
+			}
+			&.material-icon{
+					&:after{
+						background-position: -0px -256px; 
+						@include size(44px, 65px);
+						margin-top: -32.5px;
+						right: 31px;
+					}
+			}
+			&.tool-icon{
+					&:after{
+						background-position:  -0px -123px;
+						@include size(75px, 61px);
+						margin-top: -30.5px;
+						right: 27px;
+					}
+			}
+			&.techno-icon{
+					&:after{
+						background-position: -0px -0px;
+						@include size(78px, 60px);
+						margin-top: -30.5px;
+						right: 31px;
+					}
+			}
+			&.discount-icon{
+					&:after{
+						background-position: -0px -184px;
+						@include size(57px, 72px);
+						margin-top: -36px;
+						right: 31px;
+					}
+			}
+			&.delivery-icon{
+					&:after{
+						background-position: -0px -60px;
+						@include size(76px, 63px);
+						margin-top: -31.5px;
+						right: 31px;
+					}
+			}
+			.new-category{
+				@extend %new-category;
+			}
+	}
+	.carousel{
+		.glyphicon{
+			display: inline-block;
+			@include size (22px, 42px);
+			text-align: center;
+			line-height: 42px;
+			&:before{
+				@extend %beforeStandartStyle;
+			}
+			i{
+				font-size: 39px;
+			}
+		}
+	}
+	.carousel-indicators{
+		.active{
+			@include size (10px, 10px);
+			background-color: $generalcolorRed;
+		}
+	}
+	.carousel-inner{
+		position: relative;
+		.item{
+			-webkit-transition: all .4s linear;
+			-o-transition: all .4s linear;
+			transition: all .4s linear;
+			a{
+				@extend %red-btn;
+				position: absolute;
+				bottom: 24px;
+				left: 25px;
+				&:hover{
+					background-color: $colorRedHover;
+				}
+				&:active{
+					background-color: $colorRedActive;
+				}
+			}
+			.item-img{
+				@include size(100%, 164px);
+			}	
+		}
+	}
+}
+
+// блок популярных товаров
+
+.popular-title{
+	background-color: $bodyColorTitle;
+	margin: 20px 0;
+	padding: 30px 23px;
+	span{
+		@extend %title;
+	}
+	.red-btn{
+		@extend %red-btn;
+		width: 255px;
+		
+
+	}
+}
+
+//популярные производители
+
+.brend{
+	margin-bottom: 20px;
+	border: 1px solid #e5e5e5;
+	height: 145px;
+	&:hover{
+		-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .3);
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, .3);
+	}
+	&:active{
+		opacity: 0.3;
+		-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+	}
+}

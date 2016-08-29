@@ -6,7 +6,7 @@
 .header-search{
 	background-color: $generalColorDarkBlue;
 	width: 100%;
-	height: 42px;
+	height: 41px;
 	position: relative;
 		&:hover{
 			background-color:$headerColorHover;
@@ -20,11 +20,12 @@
 			background-color: $colorRedActive;
 		}
 		&:before{
+			@extend %beforeStandartStyle;
 			@include size(220px, 5px);
 			background-color: #b52933;
 			position: absolute;
-			top:42px;
-			left: 5px;
+			top:41px;
+			left: 0px;
 			&:hover{
 				background-color: #9a212a;
 			}
@@ -43,8 +44,9 @@
 		position: relative;
 		button{
 			position: absolute;
-			top: 14px;
+			top: 11px;
 			background-color: transparent;
+			font-size: 1.7em;
 			i{
 				color: #717681;
 			}
@@ -55,7 +57,7 @@
 			}
 		}
 		input[type="text"]{
-			@include size(270px, 42px);
+			@include size(255px, 41px);
 			display: inline-block;
 			background-color: transparent;
 			font-size: 1.7em;
@@ -82,9 +84,9 @@
 	}
 		
 	.condition{
-		@include size(140px, 42px);
+		@include size(149px, 41px);
 		display: inline-block;
-		line-height: 42px;
+		line-height: 41px;
 		font-size: 1.7em;
 		padding-left: 17px;
 			&:hover{
@@ -105,15 +107,14 @@
 		}
 		span {
 			color: $generalFontColor;
-			vertical-align: middle;
-			padding-left: 10px;
+			padding-left: 9px;
 			span{
 				padding-left: 3px;
 			}
 		}
 		&.order{
 			background-color: $colorHeaderOrder;
-			line-height: 42px;
+			line-height: 41px;
 			width: 150px;
 			&:hover{
 				background-color: $colorHeaderOrderHover;
@@ -128,38 +129,38 @@
 	}
 }
 .header-contact{
-	padding: 45px 0 60px 0;
+	padding: 48px 0 60px 0;
 	background-color: $bodyColor;
 	.text{
 		padding-left: 50px;
 		span{
 			color: $generalcolorRed;
-			font: 16px/23px $fontFamilyItalik;
+			font: 1.6em/1.4em $fontFamilyItalik;
 		}
 	}
 	.phone{
 		@include size(220px, 45px);
 		border: 2px solid #fff;
-		padding-left: 12px;
+		padding-left: 15px;
 		
 		i{
 			color: #b7bfc8;
-			font-size: 21px;
+			font-size: 2.1em;
 		}
 		span{
 			color: #e9292a;
-			font-size: 21px;
-			padding-left: 5px;
+			font-size: 2.1em;
+			padding-left: 10px;
 		}
 	}
 	p{
 		font-size: 16px;
 		color: #32425c;
-		padding: 10px 0 0 17px;
+		padding: 5px 0 0 17px;
 	}	
 	.wite-btn{
 		@extend %wite-btn;
-		width: 120px;
+		width: 140px;
 		&:hover{
 			span{
 				color: $generalcolorRed;
@@ -179,15 +180,14 @@
 		i{
 			color: #c5c5c5;
 			font-size: 1em;
-			vertical-align: middle;
+			margin-right: 8px;
 		}
-		span{
-			vertical-align: middle;
-		}
+		 span{
+			margin-left: 4px;
+		 }
 		&.registration{
 			@extend %wite-btn;
 			padding-left: 0;
-			line-height: 45px;
 			span{
 		 		padding-left: 0;
 			}
@@ -199,7 +199,7 @@
 		height: 60px;
 		background-color: $colorHeaderNav;
 		border-bottom: 5px solid $generalColorDarkBlue;
-		margin-top: 35px;
+		margin-top: 42px;
 		text-align: center;
 
 		li{
@@ -235,12 +235,13 @@
 		@extend %logo;
 		line-height: 63px;
 		&:before{
+			@extend %beforeStandartStyle;
 			@include size(220px, 5px);
 			background-color: #b52933;
 			position: absolute;
-			top:63px;
-			left: 5px;
-		}
+			top:64px;
+			left: 0px;
+			}
 		span{
 			color:$generalFontColor;
 			font-size: 3em;
@@ -250,7 +251,7 @@
 	ul{
 		width: 100%;
 		border-bottom: none;
-		margin: 20px 0 0 0;
+		margin: 24px 0 0 0;
 		text-align: right;
 		li{
 			display: inline-block;
@@ -279,15 +280,15 @@
 		
 	}
 	.text{
-		margin-top: 15px;
+		margin-top: 19px;
 		span{
-			font: 18px $generalFont;
+			font: 1.8em/1.4em $generalFont;
 			color: #f1f5f7;
 		}
 	}
 	
 	.stock{
-		margin-top: 0;
+		margin-top: 5px;
 		span{
 			color: #ffd180;
 		}
@@ -312,6 +313,7 @@
 		border-bottom: none;
 		background-color: transparent;
 		text-align: center;
+		padding-right: 32px;
 		li{
 			display: inline-block;
 			a{
@@ -334,3 +336,77 @@
 	}
 }
 //main
+
+// range style
+.range{
+	border: 1px solid #e5e5e5;
+	height: 318px;
+	padding: 5px 17px;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	&:hover{
+		-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, .3);
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, .3);
+	 	.hover-block{
+			opacity: 1;
+		}
+	}
+	.range-img{
+		height: 180px;
+	}
+	h6{
+		@extend %h6;
+	}	
+	.price-section{
+		margin-top: 5px;
+		.old-price{
+			@extend %h6;
+			color: #999;
+			text-decoration: line-through;
+			display: block;
+		}
+		.price{
+			@extend %h6;
+			@include size(122px, 38px);
+			line-height: 38px;
+			text-align: center;
+			display: inline-block;
+			border-radius: 3px;
+			background: $generalRedBg;
+			color: #fff;
+			position: relative;
+				&:before{
+					@extend %beforeStandartStyle;
+					width: 0;
+					height: 0;
+					border: 19px solid transparent;
+					border-left: 18px solid #ee3643;
+					position: absolute;
+					right: -36px;
+					top: 0;
+				}
+			&.undiscounted{
+				margin-top: 22px;
+			}
+		}
+	}
+	.new-category{
+		@extend %new-category;
+		width: 80px;
+		right: -25px;
+	}
+
+	.hover-block{
+		opacity: 0;
+		@include size(100%, 180px);
+		
+		position: absolute;
+		top: 5px;
+		left: 50%;
+		margin-left: -50%;
+		-webkit-transition: opacity .4s linear;
+		-o-transition: opacity .4s linear;
+		transition: opacity .4s linear;
+	}	
+}
