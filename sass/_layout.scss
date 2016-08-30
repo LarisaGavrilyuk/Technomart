@@ -103,7 +103,6 @@
 		
 		i{
 			color: $colorIkon;
-			vertical-align: middle;
 		}
 		span {
 			color: $generalFontColor;
@@ -396,17 +395,51 @@
 		width: 80px;
 		right: -25px;
 	}
-
 	.hover-block{
 		opacity: 0;
 		@include size(100%, 180px);
-		
+		background-color: #FFF;
 		position: absolute;
-		top: 5px;
+		top: 0;
 		left: 50%;
 		margin-left: -50%;
 		-webkit-transition: opacity .4s linear;
 		-o-transition: opacity .4s linear;
 		transition: opacity .4s linear;
+		.green-btn{
+			@extend %green-btn;
+			margin: 45px 43px 7px;
+			position: relative;
+			i{
+				position: absolute;
+				font-size: 1.6em;
+				color: #9bc388;
+				top: 6px;
+				left: 13px;
+			}
+			&:hover{
+				background-color: $colorBtnGreenHover;
+				i{
+					color: $generalFontColor;
+				}
+			}
+			&:active{
+				background-color: $colorBtnGreenActive;
+				border: none;
+				i{
+					color: $generalFontColor;
+				}
+			}
+		}
+		.bookmark-btn{
+			@extend %bookmark-btn;
+			margin-right: 41px;
+			&:hover{
+				border-color: $colorHeaderNav;
+			}
+			&:active{
+				opacity: 0.3;				
+			}
+		}
 	}	
 }
