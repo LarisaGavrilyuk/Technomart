@@ -126,6 +126,17 @@
 	color: #000;
 	font-family: $fontFamilyH6;
 }
+%h5{
+	font-size: 3em;
+	color: #000;
+	font-family: $generalFont;
+	text-transform: uppercase;
+}
+%span{
+	font: 1.3em $fontFamilySpan;
+	color: #000;
+	line-height: 2.3em;
+}
 // dasabled
 
 //input

@@ -9845,6 +9845,21 @@ input[type="submit"], button {
   font-family: "open_sanssemibold";
 }
 
+/* line 129, ../sass/_default-cleses.scss */
+.service-wrap .block-about-us h5 {
+  font-size: 3em;
+  color: #000;
+  font-family: "cuprumregular";
+  text-transform: uppercase;
+}
+
+/* line 135, ../sass/_default-cleses.scss */
+.service-wrap .block-about-us span, .service-wrap .tab-content .block-about p {
+  font: 1.3em "open_sanslight";
+  color: #000;
+  line-height: 2.3em;
+}
+
 /* line 2, ../sass/_layout.scss */
 -webkit-input-placeholder {
   color: #ffffff;
@@ -10319,9 +10334,9 @@ input[type="submit"], button {
   top: 0;
   left: 50%;
   margin-left: -50%;
-  -webkit-transition: opacity .4s linear;
-  -o-transition: opacity .4s linear;
-  transition: opacity .4s linear;
+  -webkit-transition: opacity .5s linear;
+  -o-transition: opacity .5s linear;
+  transition: opacity  .5s linear;
 }
 /* line 409, ../sass/_layout.scss */
 .range .hover-block .green-btn {
@@ -10514,16 +10529,88 @@ input[type="submit"], button {
 .brend {
   margin-bottom: 20px;
   border: 1px solid #e5e5e5;
-  height: 145px;
+  width: 220px;
+  height: 146px;
+  text-align: center;
 }
-/* line 151, ../sass/_home.scss */
+/* line 152, ../sass/_home.scss */
+.brend img {
+  height: 144px;
+}
+/* line 155, ../sass/_home.scss */
 .brend:hover {
+  -webkit-transition: opacity .4s linear;
+  -o-transition: opacity .4s linear;
+  transition: opacity .4s linear;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
-/* line 155, ../sass/_home.scss */
+/* line 162, ../sass/_home.scss */
 .brend:active {
   opacity: 0.3;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transition: opacity .4s linear;
+  -o-transition: opacity .4s linear;
+  transition: opacity .4s linear;
+}
+
+/* line 172, ../sass/_home.scss */
+.service-wrap {
+  margin: 80px 0;
+  background-color: #f2f6f8;
+  padding-top: 60px;
+}
+/* line 176, ../sass/_home.scss */
+.service-wrap .block-about-us {
+  margin-bottom: 70px;
+}
+/* line 178, ../sass/_home.scss */
+.service-wrap .block-about-us h5 {
+  margin-bottom: 35px;
+}
+/* line 188, ../sass/_home.scss */
+.service-wrap .nav li {
+  width: 240px;
+  height: 62px;
+  background-color: #32425c;
+  border-bottom: 1px solid #293449;
+}
+/* line 193, ../sass/_home.scss */
+.service-wrap .nav li + li {
+  border-bottom: 1px solid #293449;
+  border-top: 1px solid #405069;
+  margin-top: 0;
+}
+/* line 198, ../sass/_home.scss */
+.service-wrap .nav a {
+  color: #fff;
+  font: 2.1em "cuprumbold";
+  line-height: 62px;
+  padding: 0 0 0 21px;
+}
+/* line 203, ../sass/_home.scss */
+.service-wrap .nav a:hover {
+  background-color: #293449;
+}
+/* line 206, ../sass/_home.scss */
+.service-wrap .nav a:focus {
+  color: #32425c;
+  background-color: #FFF;
+}
+/* line 213, ../sass/_home.scss */
+.service-wrap .tab-content .active {
+  position: relative;
+}
+/* line 217, ../sass/_home.scss */
+.service-wrap .tab-content .block-about {
+  position: absolute;
+  width: 295px;
+  left: -140px;
+}
+/* line 221, ../sass/_home.scss */
+.service-wrap .tab-content .block-about h5 {
+  font: 3.6em "cuprumregular";
+  color: #32425c;
+  margin-bottom: 30px;
 }
