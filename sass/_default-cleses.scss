@@ -104,15 +104,15 @@
 	background: $generalGreenBg !important;
 }
 %new-category{
-	@include size (64px, 26px);
+	@include size (83px, 28px);
 	background-color: $generalcolorRed;
 	font: 1.6em $generalFont;
 	color: $generalFontColor;
 	text-align: center;
 	line-height: 26px;
 	position: absolute;
-	top: 1px;
-	right: -18px;
+	top: 5px;
+	right: -22px;
 	transform: rotate(45deg);
 }
 %title{
@@ -135,7 +135,7 @@
 %span{
 	font: 1.3em $fontFamilySpan;
 	color: #000;
-	line-height: 2.3em;
+	line-height: 2.1em;
 }
 // dasabled
 

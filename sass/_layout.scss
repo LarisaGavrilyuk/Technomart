@@ -106,7 +106,7 @@
 		}
 		span {
 			color: $generalFontColor;
-			padding-left: 9px;
+			padding-left: 12px;
 			span{
 				padding-left: 3px;
 			}
@@ -122,7 +122,7 @@
 				background-color: $colorHeaderOrderActive;
 			}
 			span{
-				padding-left: 0;
+				padding-left: 3px;
 			}
 		}
 	}
@@ -205,7 +205,7 @@
 			display: inline-block;
 			text-align: center;
 			a{
-				padding: 0 34px;
+				padding: 0 29px;
 				display: inline-block;
 				line-height: 55px;
 				&:hover{
@@ -352,18 +352,19 @@
 		}
 	}
 	.range-img{
-		height: 180px;
+		height: 176px;
 	}
 	h6{
 		@extend %h6;
 	}	
 	.price-section{
-		margin-top: 5px;
+		margin-top: 13px;
 		.old-price{
 			@extend %h6;
 			color: #999;
 			text-decoration: line-through;
 			display: block;
+			margin-bottom: 7px;
 		}
 		.price{
 			@extend %h6;
@@ -386,7 +387,7 @@
 					top: 0;
 				}
 			&.undiscounted{
-				margin-top: 22px;
+				margin-top: 30px;
 			}
 		}
 	}
