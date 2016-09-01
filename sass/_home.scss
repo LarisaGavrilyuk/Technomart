@@ -227,6 +227,55 @@
 				@extend %span;
 			}
 		}	
+	}	
+}
+
+//блок информации с картой
+.inform-wrap{
+	margin-bottom: 85px;
+	.block-about-us{
+		margin-bottom: 35px;
+		h5{
+			@extend %h5;
+			padding-bottom: 35px;
+		}
+		p{
+			@extend %span;
+			padding-bottom: 20px;
+		}
+		p+p{
+			padding-bottom: 15px;
+		}
+		span{
+			color: #000;
+			font-size: 1.8em;
+			font-family: $fontFamilyTitle;
+			span{
+				display: inline-block;
+				margin-right: 10px;
+				&:before{
+					@extend %beforeStandartStyle;
+					width: 25px;
+					height: 2px;
+					background-color: #fb565a;
+					vertical-align: middle;
+				}
+			}
+		}
+		&.maps{
+			margin-bottom: 0;
+			p{
+				padding-bottom: 35px;
+			}	
+		}
 	}
-	
+	.red-btn{
+		display: inline-block;
+		@extend %red-btn;
+		width: 220px;
+	&.map{
+		width: 300px;
+		margin-top: 38px;
+	}
+	}
 }

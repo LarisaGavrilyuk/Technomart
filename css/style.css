@@ -9712,7 +9712,7 @@ input[type="submit"], button {
 }
 
 /* line 15, ../sass/_default-cleses.scss */
-.header-search .logo:before, .footer-nav .logo:before, .range .price-section .price:before, .carusel-inner-wrap .category-block:after, .carusel-inner-wrap .carousel .glyphicon:before {
+.header-search .logo:before, .footer-nav .logo:before, .range .price-section .price:before, .carusel-inner-wrap .category-block:after, .carusel-inner-wrap .carousel .glyphicon:before, .inform-wrap .block-about-us span span:before {
   content: "";
   display: inline-block;
 }
@@ -9728,7 +9728,7 @@ input[type="submit"], button {
 }
 
 /* line 28, ../sass/_default-cleses.scss */
-.carusel-inner-wrap .carousel-inner .item a, .popular-title .red-btn {
+.carusel-inner-wrap .carousel-inner .item a, .popular-title .red-btn, .inform-wrap .red-btn {
   width: 195px;
   height: 38px;
   background-color: #ee3643;
@@ -9846,7 +9846,7 @@ input[type="submit"], button {
 }
 
 /* line 129, ../sass/_default-cleses.scss */
-.service-wrap .block-about-us h5 {
+.service-wrap .block-about-us h5, .inform-wrap .block-about-us h5 {
   font-size: 3em;
   color: #000;
   font-family: "cuprumregular";
@@ -9854,7 +9854,7 @@ input[type="submit"], button {
 }
 
 /* line 135, ../sass/_default-cleses.scss */
-.service-wrap .block-about-us span, .service-wrap .tab-content .block-about p {
+.service-wrap .block-about-us span, .service-wrap .tab-content .block-about p, .inform-wrap .block-about-us p {
   font: 1.3em "open_sanslight";
   color: #000;
   line-height: 2.3em;
@@ -10613,4 +10613,61 @@ input[type="submit"], button {
   font: 3.6em "cuprumregular";
   color: #32425c;
   margin-bottom: 30px;
+}
+
+/* line 234, ../sass/_home.scss */
+.inform-wrap {
+  margin-bottom: 85px;
+}
+/* line 236, ../sass/_home.scss */
+.inform-wrap .block-about-us {
+  margin-bottom: 35px;
+}
+/* line 238, ../sass/_home.scss */
+.inform-wrap .block-about-us h5 {
+  padding-bottom: 35px;
+}
+/* line 242, ../sass/_home.scss */
+.inform-wrap .block-about-us p {
+  padding-bottom: 20px;
+}
+/* line 246, ../sass/_home.scss */
+.inform-wrap .block-about-us p + p {
+  padding-bottom: 15px;
+}
+/* line 249, ../sass/_home.scss */
+.inform-wrap .block-about-us span {
+  color: #000;
+  font-size: 1.8em;
+  font-family: "cuprumbold";
+}
+/* line 253, ../sass/_home.scss */
+.inform-wrap .block-about-us span span {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 256, ../sass/_home.scss */
+.inform-wrap .block-about-us span span:before {
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  vertical-align: middle;
+}
+/* line 265, ../sass/_home.scss */
+.inform-wrap .block-about-us.maps {
+  margin-bottom: 0;
+}
+/* line 267, ../sass/_home.scss */
+.inform-wrap .block-about-us.maps p {
+  padding-bottom: 35px;
+}
+/* line 272, ../sass/_home.scss */
+.inform-wrap .red-btn {
+  display: inline-block;
+  width: 220px;
+}
+/* line 276, ../sass/_home.scss */
+.inform-wrap .red-btn.map {
+  width: 300px;
+  margin-top: 38px;
 }
