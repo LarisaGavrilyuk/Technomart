@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
-
+    <title>Catalog</title>
+    <link rel="stylesheet" href="css/symbols-technomart.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,7 +18,192 @@
     <![endif]-->
   </head>
   <body>
-    
+     <!-- Header  Start-->
+    <header>
+      <div class="header-search">
+        <div class="container">
+            <a href="#" class="logo pull-left"><span>ТЕХНОМАРТ</span></a>
+            <form action="" class="search pull-left">
+              <input type="text" name="search" placeholder="Поиск:">
+              <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+              <a href="#" class="condition  pull-left ">
+                <i class="fa fa-bookmark " aria-hidden="true"></i>
+                <span>Закладки:<span>0</span></span>
+              </a>
+              <a href="#" class="condition  pull-left ">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span>Корзина:<span>0</span></span>
+              </a>
+              <a href="#" class="condition order pull-right">
+              <span>Оформить заказ</span>
+              </a>
+        </div>
+      </div>
+      <div class="header-contact">
+        <div class="container ">
+          <div class="row ">
+            <div class="col-md-4 ">
+              <div class="text">
+                <span>Интернет-магазин</span><br>
+                <span>строительных материалов</span><br>
+                <span>и инструментов для ремонта</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="phone vertical-align">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+7 (495) 555-05-55</span>
+              </div>
+              <p>Москва, ул. Строителей, д.15</p>
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="wite-btn sign-out pull-right">
+                 <i class="fa fa-user" aria-hidden="true"></i>
+                  <span>Равшан Джамшутович</span>
+                  <i class="fa fa-sign-out" aria-hidden="true"></i>
+                </a>
+                <div class="links">
+                  <a href="">Мои заказы</a>
+                  <span></span>
+                  <a href="">Личный кабинет</a>
+                </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-md -12 ">
+              <ul>
+                <li><a href="#" ><span>Главная</span></a></li>
+                <li><a href="#" ><span>Компания</span></a></li>
+                <li><a href="#" ><span>Каталог</span></a></li>
+                <li><a href="#" ><span>Новости</span></a></li>
+                <li><a href="#" ><span>Спецпредложения</span></a></li>
+                <li><a href="#" ><span>Доставка</span></a></li>
+                <li><a href="#" ><span>Контакты</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  <!-- Header End-->
+  <!-- Main Start -->
+    <main>
+      <div class="bredcrumbs">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">каталог<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">инструмент<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                <li class="active">перфораторы</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title-category">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h5>Перфораторы</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-settings">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 pull-left">
+              <div class="filter">
+                <span>Фильтр:</span>
+              </div>
+            </div> 
+            <div class="col-md-9">
+              <div class="sorting">
+                <span>Сортровка:</span>
+                <ul>
+                  <li><a href="">по цене</a></li>
+                  <li><a href="">по типу</a></li>
+                  <li><a href="">по функционалу</a></li>
+                </ul>
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </main>
+<!-- Main End -->
+  <!-- Footer  Start-->
+    <footer>
+      <div class="footer-nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+                <a href="#" class="logo pull-left">
+                <span>ТЕХНОМАРТ</span>
+                </a>
+            </div>
+            <div class="col-md-9">
+              <ul class="nav " >
+                <li><a href="#"><span>Компания</span></a></li>
+                <li><a href="#"><span>Новости</span></a></li>
+                <li><a href="#"><span>Каталог</span></a></li>
+                <li><a href="#"><span>Доставка</span></a></li>
+                <li><a href="#"><span>Контакты</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="text">
+                <span>г. Москва, ул. Строителей, 15</span><br>
+                <span>+7 (495) 555-05-55</span>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <ul class="stock" >
+                <li><a href="#"><span>Материалы</span></a></li>
+                <li><a href="#"><span>Техника</span></a></li>
+                <li><a href="#"><span>Инструмент</span></a></li>
+                <li><a href="#"><span>Спецпредложения</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-about-us">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+                <span>© 2010–2013 Компания «Техномарт»</span><br>
+                <span>Все права защищены</span>
+            </div>
+            <div class="col-md-4">
+              <ul class="social">
+                <li><a href="#" class="vk"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="fs"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="inst"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="contacts pull-left">
+                <span>Обратная связь:</span><br>
+                <a href="#"><span>info@technomart.ru</span></a>
+              </div>
+              <div class="contacts pull-right">
+                <span>Дизайн сайта —</span><br>
+                <a href="#"><span>www.Glukhanko.ru</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!-- Footer  End-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

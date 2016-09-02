@@ -9712,7 +9712,7 @@ input[type="submit"], button {
 }
 
 /* line 15, ../sass/_default-cleses.scss */
-.header-search .logo:before, .footer-nav .logo:before, .range .price-section .price:before, .carusel-inner-wrap .category-block:after, .carusel-inner-wrap .carousel .glyphicon:before, .inform-wrap .block-about-us span span:before {
+.header-search .logo:before, .footer-nav .logo:before, .range .price-section .price:before, .carusel-inner-wrap .category-block:after, .carusel-inner-wrap .carousel .glyphicon:before, .inform-wrap .block-about-us span span:before, .header-contact .links span:before {
   content: "";
   display: inline-block;
 }
@@ -9831,7 +9831,7 @@ input[type="submit"], button {
 }
 
 /* line 118, ../sass/_default-cleses.scss */
-.popular-title span {
+.popular-title span, .title-category h5 {
   font-size: 3em;
   font-family: "cuprumregular";
   color: #32425c;
@@ -10678,4 +10678,145 @@ input[type="submit"], button {
 .inform-wrap .red-btn.map {
   width: 300px;
   margin-top: 38px;
+}
+
+/* line 4, ../sass/_catalog.scss */
+.header-contact .wite-btn {
+  width: 300px;
+}
+/* line 7, ../sass/_catalog.scss */
+.header-contact .wite-btn span {
+  margin-right: 24px;
+}
+/* line 11, ../sass/_catalog.scss */
+.header-contact .links {
+  width: 247px;
+  text-align: center;
+}
+/* line 14, ../sass/_catalog.scss */
+.header-contact .links a {
+  font: 1.6em "cuprumregular";
+  text-decoration: underline;
+  color: #32425c;
+  vertical-align: middle;
+}
+/* line 19, ../sass/_catalog.scss */
+.header-contact .links a:hover {
+  color: #ee3643;
+}
+/* line 22, ../sass/_catalog.scss */
+.header-contact .links a:active {
+  color: #c3c9cf;
+}
+/* line 26, ../sass/_catalog.scss */
+.header-contact .links span {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 29, ../sass/_catalog.scss */
+.header-contact .links span:before {
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+  border-radius: 50%;
+}
+
+/* line 40, ../sass/_catalog.scss */
+.breadcrumb {
+  background-color: #FFF;
+  padding: 20px 15px;
+  margin-bottom: 0;
+}
+/* line 44, ../sass/_catalog.scss */
+.breadcrumb li {
+  font-size: 1.2em;
+  font-family: "open_sansregular";
+  text-transform: uppercase;
+}
+/* line 48, ../sass/_catalog.scss */
+.breadcrumb li + li:before {
+  content: "";
+  padding: 0;
+}
+/* line 52, ../sass/_catalog.scss */
+.breadcrumb li i {
+  color: #e3e5e9;
+  font-size: 1.6em;
+  margin: 0 15px;
+}
+
+/* line 59, ../sass/_catalog.scss */
+.title-category {
+  margin-bottom: 20px;
+}
+/* line 61, ../sass/_catalog.scss */
+.title-category h5 {
+  background-color: #f2f6f8;
+  padding: 30px;
+}
+
+/* line 67, ../sass/_catalog.scss */
+.filter-settings {
+  text-transform: uppercase;
+  font: 1.2em "open_sansregular";
+  color: #000;
+}
+/* line 71, ../sass/_catalog.scss */
+.filter-settings .filter {
+  background-color: #f7f3ec;
+  width: 220px;
+  padding: 15px 20px;
+}
+/* line 76, ../sass/_catalog.scss */
+.filter-settings .sorting {
+  background-color: #f7f3ec;
+  width: 700px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 82, ../sass/_catalog.scss */
+.filter-settings .sorting ul {
+  right: 40px;
+  position: absolute;
+  top: 15px;
+}
+/* line 86, ../sass/_catalog.scss */
+.filter-settings .sorting ul li {
+  display: inline-block;
+  padding: 0 35px;
+}
+/* line 89, ../sass/_catalog.scss */
+.filter-settings .sorting ul li a {
+  color: #dcdcdc;
+  border-bottom: 1px dotted #ee3643;
+}
+/* line 92, ../sass/_catalog.scss */
+.filter-settings .sorting ul li a:hover {
+  color: #000;
+  border-bottom-style: solid;
+}
+/* line 96, ../sass/_catalog.scss */
+.filter-settings .sorting ul li a:active {
+  color: #ee3643;
+  border-bottom-style: none;
+}
+/* line 103, ../sass/_catalog.scss */
+.filter-settings .sorting i {
+  color: #c6c2bd;
+  font-size: 15px;
+  position: absolute;
+  right: 15px;
+}
+/* line 108, ../sass/_catalog.scss */
+.filter-settings .sorting i.fa-caret-up {
+  right: 30px;
+}
+/* line 111, ../sass/_catalog.scss */
+.filter-settings .sorting i:hover {
+  color: #000;
+}
+/* line 114, ../sass/_catalog.scss */
+.filter-settings .sorting i:active {
+  color: #ee3643;
 }

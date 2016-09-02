@@ -1,0 +1,119 @@
+
+//header изменения
+.header-contact {
+	.wite-btn{
+		@extend %wite-btn;
+		width: 300px;
+		span{
+			margin-right: 24px;
+		}
+	}
+	.links{
+		width: 247px;
+		text-align: center;
+		a{
+			font: 1.6em $generalFont;
+			text-decoration: underline;
+			color: $colorHeaderNav;
+			vertical-align: middle;
+			&:hover{
+				color: $generalcolorRed;
+			}
+			&:active{
+				color: #c3c9cf;
+			}
+		}
+		span{
+			display: inline-block;
+			margin: 0 5px;
+			&:before{
+				@extend %beforeStandartStyle;
+				@include size (4px, 4px);
+				background-color: $colorHeaderNav;
+				border-radius: 50%;
+			}
+		}		
+	}
+}
+
+//main category
+.breadcrumb{
+	background-color: #FFF;
+	padding: 20px 15px;
+	margin-bottom: 0;
+	li{
+		font-size: 1.2em;
+		font-family: $fontFamilySans;
+		text-transform: uppercase;
+		& + li:before{
+			content: "";
+			padding: 0;
+		}
+		i{
+			color: #e3e5e9;
+			font-size: 1.6em;
+			margin: 0 15px;
+		}
+	}
+}
+.title-category{
+	margin-bottom: 20px;
+	h5{
+		background-color: $bodyColorService;
+		@extend %title;
+		padding: 30px;
+	}
+}
+.filter-settings{
+	text-transform: uppercase;
+	font: 1.2em $fontFamilySans;
+	color: #000;
+	.filter{
+		background-color: $bodyColorTitle;
+		width: 220px;
+		padding: 15px 20px;
+	}
+	.sorting{
+		background-color: $bodyColorTitle;
+		width: 700px;
+		padding: 15px 20px;
+		margin-bottom: 20px;
+		position: relative;
+		ul{
+			right: 40px;
+    		position: absolute;
+    		top: 15px;
+			li{
+				display: inline-block;
+				padding: 0 35px;
+				a{
+					color: #dcdcdc;
+					border-bottom: 1px dotted $generalcolorRed;
+					&:hover{
+						color: #000;
+						border-bottom-style: solid;
+					}
+					&:active{
+						color: $generalcolorRed;
+						border-bottom-style: none;
+					}
+				}
+			}
+		}
+		i{
+			color: #c6c2bd;
+			font-size: 15px;
+			position: absolute;
+			right: 15px;
+			&.fa-caret-up{
+				right: 30px;
+			}
+			&:hover{
+				color: #000;
+			}
+			&:active{
+				color: $generalcolorRed;
+			}
+		}
+	}
+}
