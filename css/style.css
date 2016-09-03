@@ -9718,7 +9718,7 @@ input[type="submit"], button {
 }
 
 /* line 20, ../sass/_default-cleses.scss */
-.header-contact .wite-btn, .header-contact .wite-btn.registration {
+.header-contact .wite-btn, .header-contact .wite-btn.registration, .header-contact .sign-out {
   width: 150px;
   height: 45px;
   background-color: #fff;
@@ -10681,11 +10681,11 @@ input[type="submit"], button {
 }
 
 /* line 4, ../sass/_catalog.scss */
-.header-contact .wite-btn {
+.header-contact .sign-out {
   width: 300px;
 }
 /* line 7, ../sass/_catalog.scss */
-.header-contact .wite-btn span {
+.header-contact .sign-out span {
   margin-right: 24px;
 }
 /* line 11, ../sass/_catalog.scss */
@@ -10772,7 +10772,6 @@ input[type="submit"], button {
   background-color: #f7f3ec;
   width: 700px;
   padding: 15px 20px;
-  margin-bottom: 20px;
   position: relative;
 }
 /* line 82, ../sass/_catalog.scss */
@@ -10819,4 +10818,14 @@ input[type="submit"], button {
 /* line 114, ../sass/_catalog.scss */
 .filter-settings .sorting i:active {
   color: #ee3643;
+}
+
+/* line 127, ../sass/_catalog.scss */
+aside {
+  height: 200px;
+}
+
+/* line 130, ../sass/_catalog.scss */
+.catalog-line {
+  margin-top: 20px;
 }
