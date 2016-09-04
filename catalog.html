@@ -135,64 +135,73 @@
           </div>
           <div class="row">
             <div class="col-md-3 pull-left">
-            <aside>
-              <div class="price-filtr">
-                <div class="panel-group" id="accordion">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                Цена:
-                              </a>
-                            </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
-                      <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck 
+              <aside>
+                <div class="price-filtr">
+                  <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                  Цена:
+                                </a>
+                              </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <div class="price-slider">
+                            <form>
+                                <span>От</span>
+                                <input type="text" id="minCost" value="0"/>
+                                <span>До</span>
+                                <input type="text" id="maxCost" value="50000"/>
+                                <span>руб.</span>
+                                <div id="slider"></div>
+                            </form>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                Производители:
-                              </a>
-                            </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        <form action="">
-                          <ul>
-                            <li><input type="checkbox" name="" id="" value="">BOSCH</li>
-                            <li><input type="checkbox" name="" id="" value="">ИНТЕРСКОЛ</li>
-                            <li><input type="checkbox" name="" id="" value="">MAKIta</li>
-                            <li><input type="checkbox" name="" id="" value="">Dewalt</li>
-                            <li><input type="checkbox" name="" id="" value="">Hitachi</li>
-                          </ul>
-                        </form>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                  Производители:
+                                </a>
+                              </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <form action="">
+                            <ul>
+                              <li><input type="checkbox" name="" id="" value="">BOSCH</li>
+                              <li><input type="checkbox" name="" id="" value="">ИНТЕРСКОЛ</li>
+                              <li><input type="checkbox" name="" id="" value="">MAKIta</li>
+                              <li><input type="checkbox" name="" id="" value="">Dewalt</li>
+                              <li><input type="checkbox" name="" id="" value="">Hitachi</li>
+                            </ul>
+                          </form>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                Питание:
-                              </a>
-                            </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        <form action="">
-                          <input type="radio" name="" id="" value="">
-                        </form>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                  Питание:
+                                </a>
+                              </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <form action="">
+                            <input type="radio" name="" id="" value="">
+                          </form>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </aside>
+              </aside>
             </div>
             <div class="catalog-line">
               <div class="col-md-3">
@@ -396,8 +405,20 @@
           </div>
         </div>
       </div>
+      <div class="service-wrap catalog">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block-about-us">
+                <h5>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h5>
+                <span>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-<!-- Main End -->
+  <!-- Main End -->
   <!-- Footer  Start-->
     <footer>
       <div class="footer-nav">
@@ -469,5 +490,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/range-slider.js"></script>
   </body>
 </html>
