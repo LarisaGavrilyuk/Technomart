@@ -65,19 +65,19 @@
 	}
 }
 .filter-settings{
-	text-transform: uppercase;
 	font: 1.2em $fontFamilySans;
 	color: #000;
 	.filter{
 		background-color: $bodyColorTitle;
 		width: 220px;
 		padding: 15px 20px;
+		text-transform: uppercase;
 	}
 	.sorting{
 		background-color: $bodyColorTitle;
 		width: 700px;
 		padding: 15px 20px;
-		//margin-bottom: 20px;
+		text-transform: uppercase;
 		position: relative;
 		ul{
 			right: 40px;
@@ -116,13 +116,34 @@
 			}
 		}
 	}
+	.form-group{
+		position: relative;
+		padding-left: 30px;
+		label{
+			@extend %label;
+			&:before{
+				background: url('../img/sprite-check.png') no-repeat;
+				background-position: -0px -72px;
+				width: 23px;
+				height: 23px; 
+				left: -5px;
+			}
+		}
+		input[type="checkbox"]{
+			@extend %input[type="checkbox"];
+			&:checked + label{
+				&:before{
+					background: url('../img/sprite-check.png') no-repeat;
+					background-position: -0px -0px;
+					width: 27px; 
+					height: 23px;
+				}
+			}
+		}
+	}
 }
 
 // фильтры
-
-.price-filtr{
-
-}
 
 aside{
 	height: 200px;

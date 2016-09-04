@@ -137,6 +137,23 @@
 	color: #000;
 	line-height: 2.1em;
 }
-// dasabled
 
-//input
+%label{
+	display: inline-block;
+	font-size: 1.4em;
+	font-weight: normal;
+		&:before{
+			@extend %beforeStandartStyle;
+			position: absolute;
+		}
+}
+
+%input[type="checkbox"]{
+	display: none;
+	&:checked + label{
+		&:before{
+			@extend %beforeStandartStyle;
+			position: absolute;
+		}
+	}
+}
