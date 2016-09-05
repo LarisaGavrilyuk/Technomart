@@ -118,6 +118,31 @@
 			}
 		}
 	}
+	.price-filtr{
+		.panel-group{
+			.panel + .panel {
+    			margin-top: 0;
+			}
+			.panel {
+    			margin-bottom: 20px;
+    			background-color: #ffffff;
+			    border: none; 
+			    -webkit-box-shadow: none;
+			    box-shadow: none;
+			}
+		} 
+		.panel-heading{
+			padding: 10px 0;
+			background-color: #FFF;
+			h4{
+				@extend	%h6;
+				text-transform: uppercase;
+			}
+			i{
+				display: block;
+			}
+		}
+	}
 	.form-group{
 		position: relative;
 		padding-left: 30px;
@@ -179,6 +204,9 @@
 .service-wrap{
 	&.catalog{
 		margin: 54px 0 0 0;
+		p{
+			@extend %span;
+		}
 	}
 }
  
