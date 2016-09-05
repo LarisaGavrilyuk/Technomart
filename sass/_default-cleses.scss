@@ -34,6 +34,12 @@
 	text-transform: uppercase;
 	color: $generalFontColor;
 	border-radius: 3px;
+	&:hover{
+		background-color: $colorRedHover;
+	}
+	&:active{
+		background-color: $colorRedActive;
+	}
 }
 
 %green-btn{
@@ -148,7 +154,7 @@
 		}
 }
 
-%input[type="checkbox"]{
+%input[type="checkbox"], %input[type="radio"]{
 	display: none;
 	&:checked + label{
 		&:before{
@@ -156,4 +162,20 @@
 			position: absolute;
 		}
 	}
+}
+
+%delivery{
+	@include size (700px, 287px);
+	background: url("../img/delivery.png") no-repeat;
+	background-position: 100% 100%;
+}	
+%garantee{
+	@include size (700px, 287px);
+	background: url("../img/garantee.png") no-repeat;
+	background-position: 100% 100%;
+}	
+%credit{
+	@include size (700px, 287px);
+	background: url("../img/credit.png") no-repeat;
+	background-position: 100% 100%;
 }

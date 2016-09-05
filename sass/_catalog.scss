@@ -64,6 +64,8 @@
 		padding: 30px;
 	}
 }
+
+//фильтры 
 .filter-settings{
 	font: 1.2em $fontFamilySans;
 	color: #000;
@@ -140,17 +142,40 @@
 				}
 			}
 		}
+		&.radio{
+			position: relative;
+			padding-left: 10px;
+			label{
+				&:before{
+					background: url('../img/sprite-check.png') no-repeat;
+					background-position: -0px -23px;
+					width: 25px; 
+					height: 24px;
+					left: -5px;
+				}
+			}
+			input[type="radio"]{
+				@extend %input[type="radio"];
+				&:checked + label{
+					&:before{
+						background: url('../img/sprite-check.png') no-repeat;
+						background-position: -0px -47px;
+						width: 25px;
+						height: 25px; 
+					}
+				}
+			}
+		}
+	}
+
+	.range{
+		margin-top: 20px;
+		h6{
+			font-size: 1.4em;
+		}
 	}
 }
 
-// фильтры
-
-aside{
-	height: 200px;
-}
-.catalog-line{
-	margin-top: 20px;
-}
 .service-wrap{
 	&.catalog{
 		margin: 54px 0 0 0;

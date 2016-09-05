@@ -9712,7 +9712,7 @@ input[type="submit"], button {
 }
 
 /* line 15, ../sass/_default-cleses.scss */
-.filter-settings .form-group label:before, .filter-settings .form-group input[type="checkbox"]:checked + label:before, .header-search .logo:before, .footer-nav .logo:before, .range .price-section .price:before, .carusel-inner-wrap .category-block:after, .carusel-inner-wrap .carousel .glyphicon:before, .inform-wrap .block-about-us span span:before, .header-contact .links span:before {
+.filter-settings .form-group label:before, .filter-settings .form-group input[type="checkbox"]:checked + label:before, .filter-settings .form-group.radio input[type="radio"]:checked + label:before, .header-search .logo:before, .footer-nav .logo:before, .range .price-section .price:before, .carusel-inner-wrap .category-block:after, .carusel-inner-wrap .carousel .glyphicon:before, .inform-wrap .block-about-us li:before, .header-contact .links span:before {
   content: "";
   display: inline-block;
 }
@@ -9739,8 +9739,16 @@ input[type="submit"], button {
   color: #fff;
   border-radius: 3px;
 }
+/* line 37, ../sass/_default-cleses.scss */
+.carusel-inner-wrap .carousel-inner .item a:hover, .popular-title .red-btn:hover, .inform-wrap .red-btn:hover {
+  background-color: #ca2c37;
+}
+/* line 40, ../sass/_default-cleses.scss */
+.carusel-inner-wrap .carousel-inner .item a:active, .popular-title .red-btn:active, .inform-wrap .red-btn:active {
+  background-color: #ba2732;
+}
 
-/* line 39, ../sass/_default-cleses.scss */
+/* line 45, ../sass/_default-cleses.scss */
 .range .hover-block .green-btn {
   width: 134px;
   height: 38px;
@@ -9754,7 +9762,7 @@ input[type="submit"], button {
   border-bottom: 3px solid #367315;
 }
 
-/* line 50, ../sass/_default-cleses.scss */
+/* line 56, ../sass/_default-cleses.scss */
 .range .hover-block .bookmark-btn {
   width: 134px;
   height: 38px;
@@ -9767,7 +9775,7 @@ input[type="submit"], button {
   border: 3px solid #63a63e;
 }
 
-/* line 61, ../sass/_default-cleses.scss */
+/* line 67, ../sass/_default-cleses.scss */
 .header-search .logo, .footer-nav .logo {
   display: inline-block;
   width: 220px;
@@ -9777,45 +9785,45 @@ input[type="submit"], button {
   position: relative;
 }
 
-/* line 70, ../sass/_default-cleses.scss */
+/* line 76, ../sass/_default-cleses.scss */
 .contacts span {
   color: #fff;
   font: 1.6em "cuprumregular";
 }
-/* line 75, ../sass/_default-cleses.scss */
+/* line 81, ../sass/_default-cleses.scss */
 .contacts a span {
   color: #ffd180;
 }
-/* line 79, ../sass/_default-cleses.scss */
+/* line 85, ../sass/_default-cleses.scss */
 .contacts a:hover span {
   text-decoration: underline;
 }
-/* line 84, ../sass/_default-cleses.scss */
+/* line 90, ../sass/_default-cleses.scss */
 .contacts a:focus span {
   color: #ee3643;
 }
 
-/* line 91, ../sass/_default-cleses.scss */
+/* line 97, ../sass/_default-cleses.scss */
 .orange-bg {
   background: #f6b22d !important;
 }
 
-/* line 95, ../sass/_default-cleses.scss */
+/* line 101, ../sass/_default-cleses.scss */
 .blue-bg {
   background: #4aafde !important;
 }
 
-/* line 99, ../sass/_default-cleses.scss */
+/* line 105, ../sass/_default-cleses.scss */
 .pink-bg {
   background: #cc79d1 !important;
 }
 
-/* line 103, ../sass/_default-cleses.scss */
+/* line 109, ../sass/_default-cleses.scss */
 .green-bg {
   background: #85d179 !important;
 }
 
-/* line 106, ../sass/_default-cleses.scss */
+/* line 112, ../sass/_default-cleses.scss */
 .range .new-category, .carusel-inner-wrap .category-block .new-category {
   width: 83px;
   height: 28px;
@@ -9830,7 +9838,7 @@ input[type="submit"], button {
   transform: rotate(45deg);
 }
 
-/* line 118, ../sass/_default-cleses.scss */
+/* line 124, ../sass/_default-cleses.scss */
 .popular-title span, .title-category h5 {
   font-size: 3em;
   font-family: "cuprumregular";
@@ -9838,14 +9846,14 @@ input[type="submit"], button {
   text-transform: uppercase;
 }
 
-/* line 124, ../sass/_default-cleses.scss */
+/* line 130, ../sass/_default-cleses.scss */
 .range h6, .range .price-section .old-price, .range .price-section .price {
   font-size: 1.6em;
   color: #000;
   font-family: "open_sanssemibold";
 }
 
-/* line 129, ../sass/_default-cleses.scss */
+/* line 135, ../sass/_default-cleses.scss */
 .service-wrap .block-about-us h5, .inform-wrap .block-about-us h5 {
   font-size: 3em;
   color: #000;
@@ -9853,31 +9861,55 @@ input[type="submit"], button {
   text-transform: uppercase;
 }
 
-/* line 135, ../sass/_default-cleses.scss */
-.service-wrap .block-about-us span, .service-wrap .tab-content .block-about p, .inform-wrap .block-about-us p {
+/* line 141, ../sass/_default-cleses.scss */
+.service-wrap .block-about-us p, .service-wrap .tab-content .block-about p, .inform-wrap .block-about-us p {
   font: 1.3em "open_sanslight";
   color: #000;
   line-height: 2.1em;
 }
 
-/* line 141, ../sass/_default-cleses.scss */
+/* line 147, ../sass/_default-cleses.scss */
 .filter-settings .form-group label {
   display: inline-block;
   font-size: 1.4em;
   font-weight: normal;
 }
-/* line 145, ../sass/_default-cleses.scss */
+/* line 151, ../sass/_default-cleses.scss */
 .filter-settings .form-group label:before {
   position: absolute;
 }
 
-/* line 151, ../sass/_default-cleses.scss */
-.filter-settings .form-group input[type="checkbox"] {
+/* line 157, ../sass/_default-cleses.scss */
+.filter-settings .form-group input[type="checkbox"], .filter-settings .form-group.radio input[type="radio"] {
   display: none;
 }
-/* line 154, ../sass/_default-cleses.scss */
-.filter-settings .form-group input[type="checkbox"]:checked + label:before {
+/* line 160, ../sass/_default-cleses.scss */
+.filter-settings .form-group input[type="checkbox"]:checked + label:before, .filter-settings .form-group.radio input[type="radio"]:checked + label:before {
   position: absolute;
+}
+
+/* line 167, ../sass/_default-cleses.scss */
+.service-wrap .tab-content .delivery {
+  width: 700px;
+  height: 287px;
+  background: url("../img/delivery.png") no-repeat;
+  background-position: 100% 100%;
+}
+
+/* line 172, ../sass/_default-cleses.scss */
+.service-wrap .tab-content .garantee {
+  width: 700px;
+  height: 287px;
+  background: url("../img/garantee.png") no-repeat;
+  background-position: 100% 100%;
+}
+
+/* line 177, ../sass/_default-cleses.scss */
+.service-wrap .tab-content .credit {
+  width: 700px;
+  height: 287px;
+  background: url("../img/credit.png") no-repeat;
+  background-position: 100% 100%;
 }
 
 /* line 2, ../sass/_layout.scss */
@@ -10495,63 +10527,59 @@ input[type="submit"], button {
   text-align: center;
   line-height: 42px;
 }
-/* line 92, ../sass/_home.scss */
+/* line 89, ../sass/_home.scss */
+.carusel-inner-wrap .carousel .glyphicon:before {
+  position: absolute;
+}
+/* line 93, ../sass/_home.scss */
 .carusel-inner-wrap .carousel .glyphicon i {
   font-size: 39px;
 }
-/* line 98, ../sass/_home.scss */
+/* line 99, ../sass/_home.scss */
 .carusel-inner-wrap .carousel-indicators .active {
   width: 10px;
   height: 10px;
   background-color: #ee3643;
 }
-/* line 103, ../sass/_home.scss */
+/* line 104, ../sass/_home.scss */
 .carusel-inner-wrap .carousel-inner {
   position: relative;
 }
-/* line 105, ../sass/_home.scss */
+/* line 106, ../sass/_home.scss */
 .carusel-inner-wrap .carousel-inner .item {
   -webkit-transition: all .4s linear;
   -o-transition: all .4s linear;
   transition: all .4s linear;
 }
-/* line 109, ../sass/_home.scss */
+/* line 110, ../sass/_home.scss */
 .carusel-inner-wrap .carousel-inner .item a {
   position: absolute;
   bottom: 24px;
   left: 25px;
 }
-/* line 114, ../sass/_home.scss */
-.carusel-inner-wrap .carousel-inner .item a:hover {
-  background-color: #ca2c37;
-}
-/* line 117, ../sass/_home.scss */
-.carusel-inner-wrap .carousel-inner .item a:active {
-  background-color: #ba2732;
-}
-/* line 121, ../sass/_home.scss */
+/* line 116, ../sass/_home.scss */
 .carusel-inner-wrap .carousel-inner .item .item-img {
   width: 100%;
   height: 164px;
 }
 
-/* line 130, ../sass/_home.scss */
+/* line 125, ../sass/_home.scss */
 .popular-title {
   background-color: #f7f3ec;
   margin: 32px 0 19px 0;
   padding: 26px 24px;
 }
-/* line 137, ../sass/_home.scss */
+/* line 132, ../sass/_home.scss */
 .popular-title .red-btn {
   width: 255px;
 }
-/* line 143, ../sass/_home.scss */
+/* line 138, ../sass/_home.scss */
 .popular-title.brends {
   margin-top: 22px;
   padding-bottom: 25px;
 }
 
-/* line 151, ../sass/_home.scss */
+/* line 146, ../sass/_home.scss */
 .brend {
   margin-bottom: 20px;
   border: 1px solid #e5e5e5;
@@ -10559,11 +10587,11 @@ input[type="submit"], button {
   height: 146px;
   text-align: center;
 }
-/* line 156, ../sass/_home.scss */
+/* line 151, ../sass/_home.scss */
 .brend img {
   height: 144px;
 }
-/* line 159, ../sass/_home.scss */
+/* line 154, ../sass/_home.scss */
 .brend:hover {
   -webkit-transition: opacity .4s linear;
   -o-transition: opacity .4s linear;
@@ -10571,7 +10599,7 @@ input[type="submit"], button {
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
-/* line 166, ../sass/_home.scss */
+/* line 161, ../sass/_home.scss */
 .brend:active {
   opacity: 0.3;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
@@ -10581,60 +10609,56 @@ input[type="submit"], button {
   transition: opacity .4s linear;
 }
 
-/* line 176, ../sass/_home.scss */
+/* line 171, ../sass/_home.scss */
 .service-wrap {
-  margin: 64px 0 103px 0;
+  margin: 64px 0 77px 0;
   background-color: #f2f6f8;
   padding-top: 60px;
 }
-/* line 180, ../sass/_home.scss */
+/* line 175, ../sass/_home.scss */
 .service-wrap .block-about-us {
   margin-bottom: 63px;
 }
-/* line 182, ../sass/_home.scss */
+/* line 177, ../sass/_home.scss */
 .service-wrap .block-about-us h5 {
   margin-bottom: 24px;
 }
-/* line 192, ../sass/_home.scss */
+/* line 187, ../sass/_home.scss */
 .service-wrap .nav li {
   width: 240px;
   height: 62px;
   background-color: #32425c;
   border-bottom: 1px solid #293449;
 }
-/* line 197, ../sass/_home.scss */
+/* line 192, ../sass/_home.scss */
 .service-wrap .nav li + li {
   border-bottom: 1px solid #293449;
   border-top: 1px solid #405069;
   margin-top: 0;
 }
-/* line 202, ../sass/_home.scss */
+/* line 197, ../sass/_home.scss */
 .service-wrap .nav a {
   color: #fff;
   font: 2.1em "cuprumbold";
   line-height: 62px;
   padding: 0 0 0 21px;
 }
-/* line 207, ../sass/_home.scss */
+/* line 202, ../sass/_home.scss */
 .service-wrap .nav a:hover {
   background-color: #293449;
 }
-/* line 210, ../sass/_home.scss */
+/* line 205, ../sass/_home.scss */
 .service-wrap .nav a:focus {
   color: #32425c;
   background-color: #FFF;
 }
-/* line 217, ../sass/_home.scss */
-.service-wrap .tab-content .active {
-  position: relative;
-}
-/* line 221, ../sass/_home.scss */
+/* line 222, ../sass/_home.scss */
 .service-wrap .tab-content .block-about {
   position: absolute;
   width: 295px;
-  left: -151px;
+  left: 335px;
 }
-/* line 225, ../sass/_home.scss */
+/* line 226, ../sass/_home.scss */
 .service-wrap .tab-content .block-about h5 {
   font: 3.6em "cuprumregular";
   color: #32425c;
@@ -10642,51 +10666,48 @@ input[type="submit"], button {
   text-transform: uppercase;
 }
 
-/* line 239, ../sass/_home.scss */
+/* line 241, ../sass/_home.scss */
 .inform-wrap {
   margin-bottom: 85px;
 }
-/* line 241, ../sass/_home.scss */
+/* line 243, ../sass/_home.scss */
 .inform-wrap .block-about-us {
   margin-bottom: 25px;
 }
-/* line 243, ../sass/_home.scss */
+/* line 245, ../sass/_home.scss */
 .inform-wrap .block-about-us h5 {
   padding-bottom: 23px;
 }
-/* line 247, ../sass/_home.scss */
+/* line 249, ../sass/_home.scss */
 .inform-wrap .block-about-us p {
   padding-bottom: 20px;
 }
-/* line 251, ../sass/_home.scss */
+/* line 253, ../sass/_home.scss */
 .inform-wrap .block-about-us p + p {
   padding-bottom: 0;
 }
-/* line 254, ../sass/_home.scss */
-.inform-wrap .block-about-us span {
+/* line 256, ../sass/_home.scss */
+.inform-wrap .block-about-us li {
   color: #000;
   font-size: 1.8em;
   font-family: "cuprumbold";
   line-height: 37px;
 }
-/* line 259, ../sass/_home.scss */
-.inform-wrap .block-about-us span span {
-  display: inline-block;
-  margin-right: 10px;
-}
-/* line 262, ../sass/_home.scss */
-.inform-wrap .block-about-us span span:before {
+/* line 261, ../sass/_home.scss */
+.inform-wrap .block-about-us li:before {
   width: 25px;
   height: 2px;
   background-color: #fb565a;
   vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
 }
-/* line 271, ../sass/_home.scss */
-.inform-wrap .block-about-us.maps {
+/* line 272, ../sass/_home.scss */
+.inform-wrap.maps {
   margin-bottom: -3px;
 }
-/* line 273, ../sass/_home.scss */
-.inform-wrap .block-about-us.maps p {
+/* line 274, ../sass/_home.scss */
+.inform-wrap.maps p {
   padding-bottom: 29px;
 }
 /* line 278, ../sass/_home.scss */
@@ -10775,19 +10796,19 @@ input[type="submit"], button {
   padding: 30px;
 }
 
-/* line 67, ../sass/_catalog.scss */
+/* line 69, ../sass/_catalog.scss */
 .filter-settings {
   font: 1.2em "open_sansregular";
   color: #000;
 }
-/* line 70, ../sass/_catalog.scss */
+/* line 72, ../sass/_catalog.scss */
 .filter-settings .filter {
   background-color: #f7f3ec;
   width: 220px;
   padding: 15px 20px;
   text-transform: uppercase;
 }
-/* line 76, ../sass/_catalog.scss */
+/* line 78, ../sass/_catalog.scss */
 .filter-settings .sorting {
   background-color: #f7f3ec;
   width: 700px;
@@ -10795,57 +10816,57 @@ input[type="submit"], button {
   text-transform: uppercase;
   position: relative;
 }
-/* line 82, ../sass/_catalog.scss */
+/* line 84, ../sass/_catalog.scss */
 .filter-settings .sorting ul {
   right: 40px;
   position: absolute;
   top: 15px;
 }
-/* line 86, ../sass/_catalog.scss */
+/* line 88, ../sass/_catalog.scss */
 .filter-settings .sorting ul li {
   display: inline-block;
   padding: 0 35px;
 }
-/* line 89, ../sass/_catalog.scss */
+/* line 91, ../sass/_catalog.scss */
 .filter-settings .sorting ul li a {
   color: #dcdcdc;
   border-bottom: 1px dotted #ee3643;
 }
-/* line 92, ../sass/_catalog.scss */
+/* line 94, ../sass/_catalog.scss */
 .filter-settings .sorting ul li a:hover {
   color: #000;
   border-bottom-style: solid;
 }
-/* line 96, ../sass/_catalog.scss */
+/* line 98, ../sass/_catalog.scss */
 .filter-settings .sorting ul li a:active {
   color: #ee3643;
   border-bottom-style: none;
 }
-/* line 103, ../sass/_catalog.scss */
+/* line 105, ../sass/_catalog.scss */
 .filter-settings .sorting i {
   color: #c6c2bd;
   font-size: 15px;
   position: absolute;
   right: 15px;
 }
-/* line 108, ../sass/_catalog.scss */
+/* line 110, ../sass/_catalog.scss */
 .filter-settings .sorting i.fa-caret-up {
   right: 30px;
 }
-/* line 111, ../sass/_catalog.scss */
+/* line 113, ../sass/_catalog.scss */
 .filter-settings .sorting i:hover {
   color: #000;
 }
-/* line 114, ../sass/_catalog.scss */
+/* line 116, ../sass/_catalog.scss */
 .filter-settings .sorting i:active {
   color: #ee3643;
 }
-/* line 119, ../sass/_catalog.scss */
+/* line 121, ../sass/_catalog.scss */
 .filter-settings .form-group {
   position: relative;
   padding-left: 30px;
 }
-/* line 124, ../sass/_catalog.scss */
+/* line 126, ../sass/_catalog.scss */
 .filter-settings .form-group label:before {
   background: url("../img/sprite-check.png") no-repeat;
   background-position: -0px -72px;
@@ -10853,25 +10874,43 @@ input[type="submit"], button {
   height: 23px;
   left: -5px;
 }
-/* line 135, ../sass/_catalog.scss */
+/* line 137, ../sass/_catalog.scss */
 .filter-settings .form-group input[type="checkbox"]:checked + label:before {
   background: url("../img/sprite-check.png") no-repeat;
   background-position: -0px -0px;
   width: 27px;
   height: 23px;
 }
-
-/* line 148, ../sass/_catalog.scss */
-aside {
-  height: 200px;
+/* line 145, ../sass/_catalog.scss */
+.filter-settings .form-group.radio {
+  position: relative;
+  padding-left: 10px;
 }
-
-/* line 151, ../sass/_catalog.scss */
-.catalog-line {
+/* line 149, ../sass/_catalog.scss */
+.filter-settings .form-group.radio label:before {
+  background: url("../img/sprite-check.png") no-repeat;
+  background-position: -0px -23px;
+  width: 25px;
+  height: 24px;
+  left: -5px;
+}
+/* line 160, ../sass/_catalog.scss */
+.filter-settings .form-group.radio input[type="radio"]:checked + label:before {
+  background: url("../img/sprite-check.png") no-repeat;
+  background-position: -0px -47px;
+  width: 25px;
+  height: 25px;
+}
+/* line 171, ../sass/_catalog.scss */
+.filter-settings .range {
   margin-top: 20px;
 }
+/* line 173, ../sass/_catalog.scss */
+.filter-settings .range h6 {
+  font-size: 1.4em;
+}
 
-/* line 155, ../sass/_catalog.scss */
+/* line 180, ../sass/_catalog.scss */
 .service-wrap.catalog {
   margin: 54px 0 0 0;
 }

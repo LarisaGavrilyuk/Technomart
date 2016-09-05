@@ -88,6 +88,7 @@
 			line-height: 42px;
 			&:before{
 				@extend %beforeStandartStyle;
+				position: absolute;
 			}
 			i{
 				font-size: 39px;
@@ -111,12 +112,6 @@
 				position: absolute;
 				bottom: 24px;
 				left: 25px;
-				&:hover{
-					background-color: $colorRedHover;
-				}
-				&:active{
-					background-color: $colorRedActive;
-				}
 			}
 			.item-img{
 				@include size(100%, 164px);
@@ -174,7 +169,7 @@
 }
 // блок сервиса
 .service-wrap{
-	margin: 64px 0 103px 0;
+	margin: 64px 0 77px 0;
 	background-color: $bodyColorService;
 	padding-top: 60px;
 	.block-about-us{
@@ -183,7 +178,7 @@
 			@extend %h5;
 			margin-bottom: 24px;
 		}
-		span{
+		p{
 			@extend %span;
 		}
 	}
@@ -214,14 +209,20 @@
 		}
 	}
 	.tab-content{
-		.active{
-			position: relative;
+		//position: relative;	
+		.delivery{
+			@extend %delivery;
+		}	
+		.garantee{
+			@extend %garantee;
+		}	
+		.credit{
+			@extend %credit;
 		}
-			
 		.block-about{
 			position: absolute;
 			width: 295px;
-			left: -151px;
+			left: 335px;
 			h5{
 				font: 3.6em $generalFont;
 				color: $colorHeaderNav;
@@ -231,6 +232,7 @@
 			p{
 				@extend %span;
 			}
+
 		}	
 	}	
 }
@@ -251,37 +253,35 @@
 		p+p{
 			padding-bottom: 0;
 		}
-		span{
+		li{
 			color: #000;
 			font-size: 1.8em;
 			font-family: $fontFamilyTitle;
-			line-height: 37px;
-			span{
+			line-height: 37px;				
+			&:before{
+				@extend %beforeStandartStyle;
+				width: 25px;
+				height: 2px;
+				background-color: #fb565a;
+				vertical-align: middle;
 				display: inline-block;
 				margin-right: 10px;
-				&:before{
-					@extend %beforeStandartStyle;
-					width: 25px;
-					height: 2px;
-					background-color: #fb565a;
-					vertical-align: middle;
-				}
 			}
 		}
-		&.maps{
-			margin-bottom: -3px;
-			p{
-				padding-bottom: 29px;
-			}	
-		}
+	}
+	&.maps{
+		margin-bottom: -3px;
+		p{
+			padding-bottom: 29px;
+		}	
 	}
 	.red-btn{
 		display: inline-block;
 		@extend %red-btn;
 		width: 220px;
-	&.map{
-		width: 300px;
-		margin-top: 38px;
-	}
+		&.map{
+			width: 300px;
+			margin-top: 38px;
+		}
 	}
 }
