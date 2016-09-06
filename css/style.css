@@ -10397,7 +10397,7 @@ input[type='submit'].styler[disabled] {
 }
 
 /* line 15, ../sass/_default-cleses.scss */
-.filter-settings .form-group label:before, .filter-settings .form-group input[type="checkbox"]:checked + label:before, .filter-settings .form-group.radio input[type="radio"]:checked + label:before, .header-search .logo:before, .footer-nav .logo:before, .range .price-section .price:before, .carusel-inner-wrap .category-block:after, .carusel-inner-wrap .carousel .glyphicon:before, .inform-wrap .block-about-us li:before, .header-contact .links span:before {
+.filter-settings .form-group label:before, .filter-settings .form-group input[type="checkbox"]:checked + label:before, .filter-settings .form-group.radio input[type="radio"]:checked + label:before, .header-search .logo:before, .footer-nav .logo:before, .range .price-section .price:before, .carusel-inner-wrap .category-block:after, .carusel-inner-wrap .carousel .glyphicon:before, .inform-wrap .block-about-us li:before, .header-contact .links span:before, .filter-settings .price-filtr .panel-group .price-slider .line:before {
   content: "";
   display: inline-block;
 }
@@ -11558,25 +11558,90 @@ input[type='submit'].styler[disabled] {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 134, ../sass/_catalog.scss */
+/* line 133, ../sass/_catalog.scss */
+.filter-settings .price-filtr .panel-group form {
+  width: 220px;
+}
+/* line 136, ../sass/_catalog.scss */
+.filter-settings .price-filtr .panel-group .panel-body {
+  padding: 15px 0;
+}
+/* line 139, ../sass/_catalog.scss */
+.filter-settings .price-filtr .panel-group .slider-wrap {
+  width: 220px;
+  height: 80px;
+  background-color: #f7f3ec;
+  padding: 40px 20px;
+  margin-bottom: 10px;
+}
+/* line 145, ../sass/_catalog.scss */
+.filter-settings .price-filtr .panel-group .price-slider {
+  padding-bottom: 25px;
+}
+/* line 147, ../sass/_catalog.scss */
+.filter-settings .price-filtr .panel-group .price-slider input[type="text"] {
+  background-color: #f7f3ec;
+  width: 95px;
+  height: 38px;
+  font: 1.6em "open_sanslight";
+  color: #000;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: inline-block;
+}
+/* line 158, ../sass/_catalog.scss */
+.filter-settings .price-filtr .panel-group .price-slider .line {
+  display: inline-block;
+}
+/* line 160, ../sass/_catalog.scss */
+.filter-settings .price-filtr .panel-group .price-slider .line:before {
+  width: 15px;
+  height: 1px;
+  background-color: #6b6b6b;
+  margin: 0 7px;
+}
+/* line 167, ../sass/_catalog.scss */
+.filter-settings .price-filtr .panel-group .price-slider #slider {
+  margin-top: 0px;
+  height: 2px;
+}
+/* line 172, ../sass/_catalog.scss */
+.filter-settings .price-filtr .panel-group .price-slider .ui-slider .ui-slider-handle {
+  width: 20px;
+  height: 23px;
+  background-image: url("../img/circle.png");
+  background-position: 100% 100%;
+  border-radius: 50%;
+  top: -10px;
+}
+/* line 181, ../sass/_catalog.scss */
+.filter-settings .price-filtr .panel-group .price-slider .ui-widget-header {
+  background: #00ca74;
+  margin-top: 0;
+  width: 170px;
+  height: 2px;
+}
+/* line 188, ../sass/_catalog.scss */
 .filter-settings .price-filtr .panel-heading {
   padding: 10px 0;
   background-color: #FFF;
 }
-/* line 137, ../sass/_catalog.scss */
+/* line 191, ../sass/_catalog.scss */
 .filter-settings .price-filtr .panel-heading h4 {
   text-transform: uppercase;
 }
-/* line 141, ../sass/_catalog.scss */
+/* line 195, ../sass/_catalog.scss */
 .filter-settings .price-filtr .panel-heading i {
   display: block;
 }
-/* line 146, ../sass/_catalog.scss */
+/* line 200, ../sass/_catalog.scss */
 .filter-settings .form-group {
   position: relative;
   padding-left: 30px;
 }
-/* line 151, ../sass/_catalog.scss */
+/* line 205, ../sass/_catalog.scss */
 .filter-settings .form-group label:before {
   background: url("../img/sprite-check.png") no-repeat;
   background-position: -0px -72px;
@@ -11584,19 +11649,19 @@ input[type='submit'].styler[disabled] {
   height: 23px;
   left: -5px;
 }
-/* line 162, ../sass/_catalog.scss */
+/* line 216, ../sass/_catalog.scss */
 .filter-settings .form-group input[type="checkbox"]:checked + label:before {
   background: url("../img/sprite-check.png") no-repeat;
   background-position: -0px -0px;
   width: 27px;
   height: 23px;
 }
-/* line 170, ../sass/_catalog.scss */
+/* line 224, ../sass/_catalog.scss */
 .filter-settings .form-group.radio {
   position: relative;
   padding-left: 10px;
 }
-/* line 174, ../sass/_catalog.scss */
+/* line 228, ../sass/_catalog.scss */
 .filter-settings .form-group.radio label:before {
   background: url("../img/sprite-check.png") no-repeat;
   background-position: -0px -23px;
@@ -11604,23 +11669,23 @@ input[type='submit'].styler[disabled] {
   height: 24px;
   left: -5px;
 }
-/* line 185, ../sass/_catalog.scss */
+/* line 239, ../sass/_catalog.scss */
 .filter-settings .form-group.radio input[type="radio"]:checked + label:before {
   background: url("../img/sprite-check.png") no-repeat;
   background-position: -0px -47px;
   width: 25px;
   height: 25px;
 }
-/* line 196, ../sass/_catalog.scss */
+/* line 250, ../sass/_catalog.scss */
 .filter-settings .range {
   margin-top: 20px;
 }
-/* line 198, ../sass/_catalog.scss */
+/* line 252, ../sass/_catalog.scss */
 .filter-settings .range h6 {
   font-size: 1.4em;
 }
 
-/* line 205, ../sass/_catalog.scss */
+/* line 259, ../sass/_catalog.scss */
 .service-wrap.catalog {
   margin: 54px 0 0 0;
 }
