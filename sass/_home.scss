@@ -182,34 +182,36 @@
 			@extend %span;
 		}
 	}
-	.nav{
-
-		li{
-			@include size (240px, 62px);
-			background-color: $colorHeaderNav;
-			border-bottom: 1px solid #293449;
-		}
-		li+li{
-			border-bottom: 1px solid #293449;
-			border-top: 1px solid #405069;
-			margin-top: 0;
-		}
-		a{
-			color: $generalFontColor;
-			font: 2.1em $fontFamilyTitle;
-			line-height: 62px;
-			padding: 0 0 0 21px;
-			&:hover{
-				background-color: $generalColorDarkBlue;
+	.box{
+		margin-top: 5px;
+		.nav{
+			li{
+				@include size (240px, 62px);
+				background-color: $colorHeaderNav;
+				border-bottom: 1px solid #293449;
 			}
-			&:focus{
-				color: $colorHeaderNav;
-				background-color: #FFF;
+			li+li{
+				border-bottom: 1px solid #293449;
+				border-top: 1px solid #405069;
+				margin-top: 0;
+			}
+			a{
+				color: $generalFontColor;
+				font: 2.1em $fontFamilyTitle;
+				line-height: 42px;
+				padding-left:22px;
+				&:hover{
+					background-color: $generalColorDarkBlue;
+				}
+				&:focus{
+					color: $colorHeaderNav;
+					background-color: #FFF;
+				}
 			}
 		}
 	}
-	.tab-content{
-		//position: relative;	
+	
+	.tab-content{	
 		.delivery{
 			@extend %delivery;
 		}	
@@ -222,7 +224,7 @@
 		.block-about{
 			position: absolute;
 			width: 295px;
-			left: 335px;
+			left: 330px;
 			h5{
 				font: 3.6em $generalFont;
 				color: $colorHeaderNav;
@@ -241,23 +243,24 @@
 .inform-wrap{
 	margin-bottom: 85px;
 	.block-about-us{
-		margin-bottom: 25px;
+		margin-bottom: 28px;
 		h5{
 			@extend %h5;
-			padding-bottom: 23px;
+			padding-bottom: 25px;
 		}
 		p{
 			@extend %span;
-			padding-bottom: 20px;
+			margin-bottom: 25px;
 		}
 		p+p{
 			padding-bottom: 0;
+			margin-bottom: 12px;
 		}
 		li{
 			color: #000;
 			font-size: 1.8em;
 			font-family: $fontFamilyTitle;
-			line-height: 37px;				
+			line-height: 39px;				
 			&:before{
 				@extend %beforeStandartStyle;
 				width: 25px;
@@ -269,19 +272,50 @@
 			}
 		}
 	}
-	&.maps{
-		margin-bottom: -3px;
-		p{
-			padding-bottom: 29px;
-		}	
-	}
 	.red-btn{
 		display: inline-block;
 		@extend %red-btn;
 		width: 220px;
 		&.map{
 			width: 300px;
-			margin-top: 38px;
+			margin-top: 41px;
+			outline: none;
+		}
+	}
+}
+
+//modal-window
+#modal-home{
+	@extend %modal_window;
+	height: 430px;
+	.modal-dialog{
+		.modal-body {
+    		position: relative;
+    		padding: 50px 80px 0px 50px;
+    		.form-group{
+    			label{
+					font-weight: normal;
+					font: 1.8em $generalFont;
+					margin-bottom: 10px;
+
+    			}
+    			textarea{
+    				@include size (490px, 112px);
+    				padding: 15px 0 0 15px;
+    			}
+				select, input[type="text"]{
+					@include size (235px, 38px);
+					outline: none;
+				}
+    		}
+		}
+		.modal-footer{
+		.btn{
+			&.btn-default{
+				background-color: #fff;
+				color: #000;
+			}
+		}
 		}
 	}
 }

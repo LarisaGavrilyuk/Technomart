@@ -70,7 +70,7 @@
             </div>
           </div>
           <div class="row ">
-            <div class="col-md -12 ">
+            <div class="col-md-12 ">
               <ul>
                 <li><a href="#" ><span>Главная</span></a></li>
                 <li><a href="#" ><span>Компания</span></a></li>
@@ -186,7 +186,7 @@
                   <!-- блок на ховер -->
                   <div class="hover-block">
                     <a href="#" class="green-btn pull-left">
-                     <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                      <span>купить</span> 
                     </a>
                     <a href="#" class="bookmark-btn pull-right">в закладки</a>
@@ -206,7 +206,7 @@
                   <!-- блок на ховер -->
                   <div class="hover-block">
                     <a href="#" class="green-btn pull-left">
-                     <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                      <span>купить</span> 
                     </a>
                     <a href="#" class="bookmark-btn pull-right">в закладки</a>
@@ -226,7 +226,7 @@
                   <!-- блок на ховер -->
                   <div class="hover-block">
                     <a href="#" class="green-btn pull-left">
-                     <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                      <span>купить</span> 
                     </a>
                     <a href="#" class="bookmark-btn pull-right">в закладки</a>
@@ -247,7 +247,7 @@
                   <div class="hover-block">
                     <div class="new-category">new</div>
                     <a href="#" class="green-btn pull-left">
-                     <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                      <span>купить</span> 
                     </a>
                     <a href="#" class="bookmark-btn pull-right">в закладки</a>
@@ -386,7 +386,7 @@
                 
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1041.187626134966!2d37.526703342583026!3d55.68743052994813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1472731180773" width="300" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>
                 
-                <a href="#" class="red-btn map">заблудились? напишите нам</a>
+                <a href="#modal-home" class="red-btn map" data-toggle="modal">заблудились? напишите нам</a>
               </div>
           </div>
         </div>
@@ -462,11 +462,59 @@
       </div>
     </footer>
   <!-- Footer  End-->
-    
+    <!-- modal window start -->
+    <div id="modal-home" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" name="userName" id="name" class="form-control" placeholder="Представьтесь, пожалуйста">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="mail">Ваш e-mail:</label>
+                    <select name="e-mail" id="mail"  data-placeholder="Для отправки ответа">
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="comment">Текст письма:</label>
+                    <textarea name="comment" id="comment" placeholder="В свободной форме" ></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+             <div class="row">
+              <div class="col-md-6">
+                <button type="button" class="btn btn-primary">Отправить</button>
+              </div>
+              <div class="col-md-6">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal window end -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="путь_к_файлу/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
   </body>
 </html>

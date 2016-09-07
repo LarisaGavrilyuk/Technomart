@@ -4,8 +4,12 @@
 	.sign-out{
 		@extend %wite-btn;
 		width: 300px;
+		margin-bottom: 6px;
 		span{
-			margin-right: 24px;
+			margin-right: 35px;
+		}
+		i{
+			margin-right: 0;
 		}
 	}
 	.links{
@@ -39,7 +43,7 @@
 //main category
 .breadcrumb{
 	background-color: #FFF;
-	padding: 20px 15px;
+	padding: 17px 0;
 	margin-bottom: 0;
 	li{
 		font-size: 1.2em;
@@ -51,8 +55,11 @@
 		}
 		i{
 			color: #e3e5e9;
-			font-size: 1.6em;
-			margin: 0 15px;
+			font-size: 1.4em;
+			&.fa-angle-right{
+				margin: 0 14px;
+				
+			}
 		}
 	}
 }
@@ -61,7 +68,7 @@
 	h5{
 		background-color: $bodyColorService;
 		@extend %title;
-		padding: 30px;
+		padding: 28px;
 	}
 }
 
@@ -72,19 +79,19 @@
 	.filter{
 		background-color: $bodyColorTitle;
 		width: 220px;
-		padding: 15px 20px;
+		padding: 11px 18px;
 		text-transform: uppercase;
 	}
 	.sorting{
 		background-color: $bodyColorTitle;
 		width: 700px;
-		padding: 15px 20px;
+		padding: 11px 18px;
 		text-transform: uppercase;
 		position: relative;
 		ul{
-			right: 40px;
-    		position: absolute;
-    		top: 15px;
+			position: absolute;
+			right: 62px;
+    		top: 11px;
 			li{
 				display: inline-block;
 				padding: 0 35px;
@@ -104,11 +111,13 @@
 		}
 		i{
 			color: #c6c2bd;
-			font-size: 15px;
+			font-size: 1.8em;
 			position: absolute;
-			right: 15px;
-			&.fa-caret-up{
-				right: 30px;
+			right: 9px;
+			top: 5px;
+			&.icon-up-dir{
+				right: 40px;
+				top: 5px;
 			}
 			&:hover{
 				color: #000;
@@ -120,11 +129,11 @@
 	}
 	.price-filtr{
 		.panel-group{
-			.panel + .panel {
-    			margin-top: 0;
+			.panel-heading{
+				padding: 17px 10px 0 0;
 			}
 			.panel {
-    			margin-bottom: 20px;
+    			margin-bottom: 10px;
     			background-color: #ffffff;
 			    border: none; 
 			    -webkit-box-shadow: none;
@@ -154,6 +163,9 @@
     				margin: 0;
     				border: none;
     				display: inline-block;
+    			}
+    			span{
+    				outline: none;
     			}
     			.line{
     				display: inline-block;
@@ -246,21 +258,56 @@
 			}
 		}
 	}
-
 	.range{
 		margin-top: 20px;
-		h6{
+		h6 {
 			font-size: 1.4em;
+		}
+		.hover-block .green-btn i{
+			font-size: 1.4em;
+		}
+		.price-section {
+    		margin-top: 9px;
+		}
+	}
+	.paginations{
+		@extend %paginations;
+	}
+}
+.service-wrap{
+	&.catalog{
+		margin: 60px 0 6px 0;
+		padding-top: 63px;
+		p{
+			@extend %span;
+			line-height: 24px;
 		}
 	}
 }
 
-.service-wrap{
-	&.catalog{
-		margin: 54px 0 0 0;
-		p{
-			@extend %span;
+//modal window
+
+#modal-catalog{
+	@extend %modal_window;
+	.modal-dialog{
+		.modal-body{
+			height: 170px;
+			padding-top: 70px;
+			text-align: center;
+			background: url("../img/modal_window .png") no-repeat;
+			background-position: 10% 50%; 
+			p{
+				@extend %h5;
+				text-transform: none;
+			}
+		}
+		.modal-footer{
+			.btn{
+				&.btn-default{
+					background-color: #f1f1f1;
+					color: #000;
+				}
+			}
 		}
 	}
 }
- 

@@ -141,7 +141,7 @@
 %span{
 	font: 1.3em $fontFamilySpan;
 	color: #000;
-	line-height: 2.1em;
+	line-height: 24px;
 }
 
 %label{
@@ -178,4 +178,92 @@
 	@include size (700px, 287px);
 	background: url("../img/credit.png") no-repeat;
 	background-position: 100% 100%;
+}
+
+%paginations{
+	margin-top: 53px;
+		li{
+			display: inline-block;
+			&.next{
+				width: 140px;
+			}
+			a{
+				@include size (38px, 38px);
+				margin-right: 7px;
+				display: inline-block;
+				border-radius: 2px;
+				border: 1px solid #e5e5e5;
+				text-align: center;
+				line-height: 38px;
+				&.next{
+					width: 140px;
+				}
+				&:hover{
+					border: 1px solid #bdc6ca;
+					color: #000;
+				}
+				&:active{
+					border: 1px solid $generalcolorRed;
+					color: #000;
+				}	
+				&:focus{
+					border: none;
+					background-color: $generalcolorRed;
+					color: #fff;
+				}	
+			}	
+		}
+}
+
+// модальное окно
+%modal_window{
+	@include size (620px, 282px);
+	top: 50%;
+	left: 50%;
+	margin-left: -310px;
+	margin-top: -141px;
+	.modal-dialog{
+		margin: 0;
+		width: 620px;
+		&:before{
+			@extend %beforeStandartStyle;
+			position: absolute;
+			@include size (620px, 7px);
+			background-color: $generalcolorRed;
+			z-index: 3;
+		}
+		.modal-content{
+			-webkit-box-shadow: none;
+    		box-shadow: none;
+    		border: none;
+    		.modal-body{
+				input[type="text"], textarea, select{
+					border: 2px solid #d7dcde;
+					font-size: 1.3em;
+					font-family: $fontFamilySans;
+					color: #999;
+					border-radius: 2px;
+				}
+			}
+			.modal-footer{
+				height: 111px;
+				background-color: #f1f1f1;
+				border: none;
+				padding: 34px 70px;
+				.btn{
+					width: 220px;
+					padding: 0;
+					border: none;
+					outline: none;
+					background-color: $generalcolorRed;
+					text-align: center;
+					font: 1.4em $generalFont;
+					line-height: 38px;
+					text-transform: uppercase;
+					color: $generalFontColor;
+					border-radius: 3px;
+				}
+			}    
+		}
+	}
 }

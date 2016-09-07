@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/range_style.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,7 +74,7 @@
             </div>
           </div>
           <div class="row ">
-            <div class="col-md -12 ">
+            <div class="col-md-12">
               <ul>
                 <li><a href="#" ><span>Главная</span></a></li>
                 <li><a href="#" ><span>Компания</span></a></li>
@@ -130,8 +131,8 @@
                   <li><a href="">по типу</a></li>
                   <li><a href="">по функционалу</a></li>
                 </ul>
-                <i class="fa fa-caret-up" aria-hidden="true"></i>
-                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                <a href=""><i class="icon-up-dir" aria-hidden="true"></i></a>
+                <a href=""><i class="icon-down-dir" aria-hidden="true"></i></a>
               </div>
            </div>  
           </div>
@@ -154,9 +155,9 @@
                           <div class="price-slider">
                             <form>
                                 <div class="slider-wrap"><div id="slider"></div></div>
-                                <input type="text" id="minCost" class="pull-left" value="0"/>
+                                <input type="text" id="minCost" class="cost pull-left" value="0"/>
                                 <span class="line"></span>
-                                <input type="text" id="maxCost" class="pull-right" value="50000"/>
+                                <input type="text" id="maxCost" class="cost pull-right" value="50000"/>
                             </form>
                           </div>
                         </div>
@@ -239,8 +240,8 @@
                       </div>
                       <!-- блок на ховер -->
                       <div class="hover-block">
-                        <a href="#" class="green-btn pull-left">
-                         <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <a href="#modal-catalog" class="green-btn pull-left" data-toggle="modal">
+                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                          <span>купить</span> 
                         </a>
                         <a href="#" class="bookmark-btn pull-right">в закладки</a>
@@ -259,8 +260,8 @@
                         </div>
                         <!-- блок на ховер -->
                         <div class="hover-block">
-                          <a href="#" class="green-btn pull-left">
-                           <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                          <a href="#modal-catalog" class="green-btn pull-left" data-toggle="modal">
+                           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                            <span>купить</span> 
                           </a>
                           <a href="#" class="bookmark-btn pull-right">в закладки</a>
@@ -280,16 +281,14 @@
                         <!-- блок на ховер -->
                         <div class="hover-block">
                           <div class="new-category">new</div>
-                          <a href="#" class="green-btn pull-left">
-                           <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                          <a href="#modal-catalog" class="green-btn pull-left" data-toggle="modal">
+                           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                            <span>купить</span> 
                           </a>
                           <a href="#" class="bookmark-btn pull-right">в закладки</a>
                         </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">
                 <div class="col-md-4">
                   <div class="range">
                       <div class="range-img vertical-align">
@@ -302,8 +301,8 @@
                       </div>
                       <!-- блок на ховер -->
                       <div class="hover-block">
-                        <a href="#" class="green-btn pull-left">
-                         <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <a href="#modal-catalog" class="green-btn pull-left" data-toggle="modal">
+                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                          <span>купить</span> 
                         </a>
                         <a href="#" class="bookmark-btn pull-right">в закладки</a>
@@ -322,8 +321,8 @@
                         </div>
                         <!-- блок на ховер -->
                         <div class="hover-block">
-                          <a href="#" class="green-btn pull-left">
-                           <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                          <a href="#modal-catalog" class="green-btn pull-left" data-toggle="modal">
+                           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                            <span>купить</span> 
                           </a>
                           <a href="#" class="bookmark-btn pull-right">в закладки</a>
@@ -343,18 +342,16 @@
                         <!-- блок на ховер -->
                         <div class="hover-block">
                           <div class="new-category">new</div>
-                          <a href="#" class="green-btn pull-left">
-                           <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                          <a href="#modal-catalog" class="green-btn pull-left" data-toggle="modal">
+                           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                            <span>купить</span> 
                           </a>
                           <a href="#" class="bookmark-btn pull-right">в закладки</a>
                         </div>
                   </div>
                 </div>
-              </div>
-              <div class="row">
                 <div class="col-md-4">
-                  <div class="range">
+                    <div class="range">
                       <div class="range-img vertical-align">
                         <img src="img/drill_2_4.png" alt="">
                       </div>
@@ -365,13 +362,13 @@
                       </div>
                       <!-- блок на ховер -->
                       <div class="hover-block">
-                        <a href="#" class="green-btn pull-left">
-                         <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <a href="#modal-catalog" class="green-btn pull-left" data-toggle="modal">
+                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                          <span>купить</span> 
                         </a>
                         <a href="#" class="bookmark-btn pull-right">в закладки</a>
                       </div>
-                  </div>
+                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="range">
@@ -385,8 +382,8 @@
                         </div>
                         <!-- блок на ховер -->
                         <div class="hover-block">
-                          <a href="#" class="green-btn pull-left">
-                           <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                          <a href="#modal-catalog" class="green-btn pull-left" data-toggle="modal">
+                           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                            <span>купить</span> 
                           </a>
                           <a href="#" class="bookmark-btn pull-right">в закладки</a>
@@ -406,13 +403,25 @@
                         <!-- блок на ховер -->
                         <div class="hover-block">
                           <div class="new-category">new</div>
-                          <a href="#" class="green-btn pull-left">
-                           <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                          <a href="#modal-catalog" class="green-btn pull-left" data-toggle="modal">
+                           <i class="fa fa-shopping-cartaria-hidden="true"></i>
                            <span>купить</span> 
                           </a>
                           <a href="#" class="bookmark-btn pull-right">в закладки</a>
                         </div>
                   </div>
+                </div>
+              </div>
+              
+              
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="paginations">
+                    <li><a href="#">1 </a></li>
+                    <li><a href="#">2 </a></li>
+                    <li><a href="#">3 </a></li>
+                    <li class="next"><a href="#" class="next">СЛЕДУЮЩАЯ </a></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -500,11 +509,45 @@
       </div>
     </footer>
   <!-- Footer  End-->
+
+    <!-- modal window start -->
+    <div id="modal-catalog" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Товар добавлен в корзину!</p>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-md-6">
+                <button type="button" class="btn btn-primary">Оформить заказ</button>
+              </div>
+              <div class="col-md-6">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal window end -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/range-slider.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/keypress.js"></script>
+    <!-- запрет на ввод букв, только цифры -->
+    <script>  
+      $(".cost").keypress(function( b ){
+          var C = /[0-9\x25\x24\x23]/;
+          var a = b.which;
+          var c = String.fromCharCode(a);
+          return !!(a==0||a==8||a==9||a==13||c.match(C));
+      });
+    </script>
+
   </body>
 </html>
