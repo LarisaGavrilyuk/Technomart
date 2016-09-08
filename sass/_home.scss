@@ -306,16 +306,51 @@
 				select, input[type="text"]{
 					@include size (235px, 38px);
 					outline: none;
+					-webkit-box-shadow: none;
+	  				box-shadow: none;
 				}
-    		}
-		}
-		.modal-footer{
-		.btn{
-			&.btn-default{
-				background-color: #fff;
-				color: #000;
+				select{
+					color: #000;
+				}
+				// &.select{
+				// 	position: relative;
+				// 		span{
+				// 			display: inline-block;
+				// 			position: absolute;
+				// 			padding: 5px;
+				// 			top: 33px;
+				// 			left: 10px;
+				// 			font-size: 1.3em;
+				// 			font-family: $fontFamilySans;
+				// 			color: #999;
+				// 			-webkit-box-shadow: none;
+	  	// 					box-shadow: none;
+	  	// 					& span{
+	  	// 						padding-left: 20px;
+	  	// 					}
+				// 		}
+				// }
 			}
-		}
+    	}
+		.modal-footer{
+			.btn{
+				&.btn-default{
+					background-color: #fff;
+					color: #000;
+					&:hover{
+						background-color: #fff;
+						color: #000;
+						-webkit-box-shadow: none;
+  						box-shadow: none;
+					}
+					&:active{
+						background-color: #fff;
+						color: #000;
+						-webkit-box-shadow: none;
+  						box-shadow: none;
+					}	
+				}
+			}
 		}
 	}
 }

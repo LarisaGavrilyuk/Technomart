@@ -127,135 +127,131 @@
 			}
 		}
 	}
-	.price-filtr{
-		.panel-group{
-			.panel-heading{
-				padding: 17px 10px 0 0;
+	.accordion{
+		.accordion-header{
+			padding: 0;
+			margin: 18px 9px 0 0;
+			background-color: #FFF;
+			display: block;
+			line-height: 21px;
+			@extend	%h6;
+			text-transform: uppercase;
+			font-size: 1.3em;
+			i{
+				font-size: 24px;
+			}	
+		}
+		.accordion-content{
+			display: none;
+		}
+		.accordion-content{
+			.price-slider{
+				margin-top: 17px;
+				padding-bottom: 0;
 			}
-			.panel {
-    			margin-bottom: 10px;
-    			background-color: #ffffff;
-			    border: none; 
-			    -webkit-box-shadow: none;
-			    box-shadow: none;
-			}
-			form{
-				width: 220px;
-			}
-			.panel-body{
-				padding: 15px 0;
-			}
-			.slider-wrap{
+			height: auto;
+			width: 220px;
+    		padding-bottom: 25px;
+    		border-bottom: 1px solid #e5e5e5;
+    		input[type="text"]{
+    			background-color: $bodyColorTitle;
+    			@include size (92px, 38px);
+    			font: 1.6em $fontFamilySpan;
+	    		color: #000;
+	    		text-align: center;
+	    		padding: 0;
+	    		margin: 0;
+	    		border: none;
+	    		display: inline-block;
+    		}
+    		span{
+    			outline: none;
+    		}
+    		.slider-wrap{
 				@include size (220px, 80px);
 				background-color: $bodyColorTitle;
 				padding: 40px 20px;
 				margin-bottom: 10px;				
 			}
-			.price-slider {
-    			padding-bottom: 25px;
-    			input[type="text"]{
-    				background-color: $bodyColorTitle;
-    				@include size (95px, 38px);
-    				font: 1.6em $fontFamilySpan;
-    				color: #000;
-    				text-align: center;
-    				padding: 0;
-    				margin: 0;
-    				border: none;
-    				display: inline-block;
-    			}
-    			span{
-    				outline: none;
-    			}
-    			.line{
-    				display: inline-block;
-    				&:before{
-    					@extend %beforeStandartStyle;
-    					@include size (15px, 1px);
-    					background-color: #6b6b6b;
-    					margin: 0 7px;
-    				}
-    			}
-    			#slider{
-    				margin-top: 0px;
-    				height: 2px;
-    			}
-    			.ui-slider{
-    				.ui-slider-handle {
-   					    width: 20px;
-    					height: 23px;
-   					    background-image: url("../img/circle.png");
-    				    background-position: 100% 100%;
-    				    border-radius: 50%;
-    				    top: -10px;
-					}
-    			} 
-    			.ui-widget-header {
-   					background: #00ca74;
-   					margin-top: 0;
-   					@include size (170px, 2px);
+			#slider{
+	   			margin-top: 0px;
+	   			height: 2px;
+	 		}
+	    	.line{
+	    		display: inline-block;
+	    		&:before{
+	    			@extend %beforeStandartStyle;
+	    			@include size (15px, 1px);
+	    			background-color: #6b6b6b;
+	    			margin: 0 7px;
+	    		}
+	   		}
+	   		.ui-slider{
+	   			.ui-slider-handle {
+	   			    width: 20px;
+	    			height: 23px;
+	   			    background-image: url("../img/circle.png");
+	    		    background-position: 100% 100%;
+	    		    border-radius: 50%;
+	   			    top: -10px;
 				}
+  			} 
+	   		.ui-widget-header{
+	   			background: #00ca74;
+	   			margin-top: 0;
+	 			@include size (170px, 2px);				
 			}
-		} 
-		.panel-heading{
-			padding: 10px 0;
-			background-color: #FFF;
-			h4{
-				@extend	%h6;
-				text-transform: uppercase;
-			}
-			i{
-				display: block;
-			}
-		}
-	}
-	.form-group{
-		position: relative;
-		padding-left: 30px;
-		label{
-			@extend %label;
-			&:before{
-				background: url('../img/sprite-check.png') no-repeat;
-				background-position: -0px -72px;
-				width: 23px;
-				height: 23px; 
-				left: -5px;
-			}
-		}
-		input[type="checkbox"]{
-			@extend %input[type="checkbox"];
-			&:checked + label{
-				&:before{
-					background: url('../img/sprite-check.png') no-repeat;
-					background-position: -0px -0px;
-					width: 27px; 
-					height: 23px;
-				}
-			}
-		}
-		&.radio{
-			position: relative;
-			padding-left: 10px;
-			label{
-				&:before{
-					background: url('../img/sprite-check.png') no-repeat;
-					background-position: -0px -23px;
-					width: 25px; 
-					height: 24px;
-					left: -5px;
-				}
-			}
-			input[type="radio"]{
-				@extend %input[type="radio"];
-				&:checked + label{
+			.form-group{
+				position: relative;
+				padding-left: 30px;
+				margin-top: 20px;
+				margin-bottom: 0;
+				label{
+					@extend %label;
 					&:before{
 						background: url('../img/sprite-check.png') no-repeat;
-						background-position: -0px -47px;
-						width: 25px;
-						height: 25px; 
+						background-position: -0px -72px;
+						width: 23px;
+						height: 23px; 
+						left: 0px;
 					}
 				}
-			}
+				input[type="checkbox"]{
+					@extend %input[type="checkbox"];
+					&:checked + label{
+						&:before{
+							background: url('../img/sprite-check.png') no-repeat;
+							background-position: -0px -0px;
+							width: 27px; 
+							height: 23px;
+						}
+					}
+				}
+				&.radio{
+					position: relative;
+					label{
+						padding-left: 5px;
+						&:before{
+							background: url('../img/sprite-check.png') no-repeat;
+							background-position: -0px -23px;
+							width: 25px; 
+							height: 24px;
+							left: 0px;
+						}
+					}
+					input[type="radio"]{
+						@extend %input[type="radio"];
+						&:checked + label{
+							&:before{
+								background: url('../img/sprite-check.png') no-repeat;
+								background-position: -0px -47px;
+								width: 25px;
+								height: 25px; 
+							}
+						}
+					}
+				}
+			}	
 		}
 	}
 	.range{
@@ -272,6 +268,16 @@
 	}
 	.paginations{
 		@extend %paginations;
+		li{
+			&:active{
+				.active{
+					a{
+						border: 1px solid $generalcolorRed;
+						color: #000;
+					}	
+				}
+			}
+		}
 	}
 }
 .service-wrap{
@@ -306,6 +312,18 @@
 				&.btn-default{
 					background-color: #f1f1f1;
 					color: #000;
+					&:hover{
+						background-color: #f1f1f1;
+						color: #000;
+						-webkit-box-shadow: none;
+  						box-shadow: none;
+					}
+					&:active{
+						background-color: #f1f1f1;
+						color: #000;
+						-webkit-box-shadow: none;
+  						box-shadow: none;
+					}
 				}
 			}
 		}

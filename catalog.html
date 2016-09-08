@@ -139,91 +139,63 @@
           <div class="row">
             <div class="col-md-3 pull-left">
               <aside>
-                <div class="price-filtr">
-                  <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                             Цена:
-                             <i class="icon-up pull-right" aria-hidden="true"></i> 
-                          </a>
-                        </h4>
+                  <ul class="accordion">
+                    <li>
+                      <span class="accordion-header"> Цена:<i class="icon-up pull-right" aria-hidden="true"></i></span>
+                      <div class="accordion-content">
+                        <div class="price-slider">
+                          <form>
+                            <div class="slider-wrap"><div id="slider"></div></div>
+                            <input type="text" id="minCost" value="0"/>
+                            <span class="line"></span>
+                            <input type="text" id="maxCost" value="50000"/>
+                          </form>
+                        </div>
                       </div>
-                      <div id="collapseOne" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                          <div class="price-slider">
-                            <form>
-                                <div class="slider-wrap"><div id="slider"></div></div>
-                                <input type="text" id="minCost" class="cost pull-left" value="0"/>
-                                <span class="line"></span>
-                                <input type="text" id="maxCost" class="cost pull-right" value="50000"/>
-                            </form>
+                    </li>
+                    <li>
+                      <span class="accordion-header">Производители:<i class="icon-up pull-right" aria-hidden="true"></i></span>
+                      <div class="accordion-content">
+                        <form action="">
+                          <div class="form-group">
+                            <input type="checkbox" name="bosch" id="bosch">
+                            <label for= "bosch">BOSCH</label>
                           </div>
-                        </div>
+                          <div class="form-group">
+                            <input type="checkbox" name="interscol" id="interscol">
+                            <label for= "interscol">ИНТЕРСКОЛ</label>
+                          </div>
+                          <div class="form-group">
+                            <input type="checkbox" name="makita" id="makita">
+                            <label for= "makita"> MAKITA</label>
+                          </div>
+                          <div class="form-group">
+                            <input type="checkbox" name="dewalt" id="dewalt">
+                            <label for= "dewalt">DEWALT</label>
+                          </div>
+                          <div class="form-group">
+                            <input type="checkbox" name="hitachi" id="hitachi">
+                            <label for= "hitachi">HITACHI</label>
+                          </div> 
+                        </form>
                       </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                               Производители:
-                               <i class="icon-up pull-right" aria-hidden="true"></i> 
-                            </a>
-                        </h4>
+                    </li>
+                    <li>
+                      <span class="accordion-header">Питание:<i class="icon-up pull-right" aria-hidden="true"></i></span>
+                      <div class="accordion-content">
+                        <form action="">
+                          <div class="form-group radio">
+                            <input type="radio" name="battery" id="battery">
+                            <label for= "battery" >АККУМУЛЯТОРНЫЕ</label>                                
+                          </div>
+                          <div class="form-group radio">
+                            <input type="radio" name="network" id="network">
+                            <label for= "network">СЕТЕВЫЕ</label>
+                          </div>
+                        </form>
                       </div>
-                      <div id="collapseTwo" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                          <form action="">
-                              <div class="form-group">
-                                <input type="checkbox" name="bosch" id="bosch">
-                                <label for= "bosch">BOSCH</label>
-                              </div>
-                              <div class="form-group">
-                                <input type="checkbox" name="interscol" id="interscol">
-                                <label for= "interscol">ИНТЕРСКОЛ</label>
-                              </div>
-                              <div class="form-group">
-                                <input type="checkbox" name="makita" id="makita">
-                                <label for= "makita"> MAKITA</label>
-                              </div>
-                              <div class="form-group">
-                                <input type="checkbox" name="dewalt" id="dewalt">
-                                <label for= "dewalt">DEWALT</label>
-                              </div>
-                              <div class="form-group">
-                                <input type="checkbox" name="hitachi" id="hitachi">
-                                <label for= "hitachi">HITACHI</label>
-                              </div> 
-                          </form>
-                        </div>
-                      </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                              Питание:
-                              <i class="icon-up pull-right" aria-hidden="true"></i> 
-                            </a>
-                        </h4>
-                      </div>
-                      <div id="collapseThree" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                          <form action="">
-                              <div class="form-group radio">
-                                <input type="radio" name="battery" id="battery">
-                                <label for= "battery" >АККУМУЛЯТОРНЫЕ</label>                                
-                              </div>
-                              <div class="form-group radio">
-                                <input type="radio" name="network" id="network">
-                                <label for= "network">СЕТЕВЫЕ</label>
-                             </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                    </li>
+                  </ul>
               </aside>
             </div>
             <div class="col-md-9">
@@ -417,10 +389,10 @@
               <div class="row">
                 <div class="col-md-12">
                   <ul class="paginations">
-                    <li><a href="#">1 </a></li>
-                    <li><a href="#">2 </a></li>
-                    <li><a href="#">3 </a></li>
-                    <li class="next"><a href="#" class="next">СЛЕДУЮЩАЯ </a></li>
+                    <li class="active"><a href="#">1 </a></li>
+                    <li class="active"><a href="#">2 </a></li>
+                    <li class="active"><a href="#">3 </a></li>
+                    <li class="next active""><a href="#" class="next">СЛЕДУЮЩАЯ </a></li>
                   </ul>
                 </div>
               </div>
@@ -548,6 +520,15 @@
           return !!(a==0||a==8||a==9||a==13||c.match(C));
       });
     </script>
-
+     <script> 
+      $(".accordion .accordion-header").click(function() {
+      if($(this).next("div").is(":visible")){
+      $(this).next("div").slideUp("slow");
+      } else {
+      $(".accordion .accordion-content").slideUp("slow");
+      $(this).next("div").slideToggle("slow");
+      }
+      });
+    </script>
   </body>
 </html>

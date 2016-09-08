@@ -40,11 +40,11 @@
 		}
 	}
 	.search{
-		padding-left: 17px;
 		position: relative;
 		button{
 			position: absolute;
 			top: 11px;
+			left: 17px;
 			background-color: transparent;
 			font-size: 1.7em;
 			i{
@@ -57,12 +57,12 @@
 			}
 		}
 		input[type="text"]{
-			@include size(255px, 41px);
+			@include size(270px, 41px);
 			display: inline-block;
 			background-color: transparent;
 			font-size: 1.7em;
 			color: #000;
-			padding-left: 32px;
+			padding-left: 49px;
 			&:hover{
 				background-color: $headerColorHover;
 				&:hover+ button{

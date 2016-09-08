@@ -10397,7 +10397,7 @@ input[type='submit'].styler[disabled] {
 }
 
 /* line 15, ../sass/_default-cleses.scss */
-.filter-settings .form-group label:before, .filter-settings .form-group input[type="checkbox"]:checked + label:before, .filter-settings .form-group.radio input[type="radio"]:checked + label:before, #modal-home .modal-dialog:before, #modal-catalog .modal-dialog:before, .header-search .logo:before, .footer-nav .logo:before, .range .price-section .price:before, .carusel-inner-wrap .category-block:after, .carusel-inner-wrap .carousel .glyphicon:before, .inform-wrap .block-about-us li:before, .header-contact .links span:before, .filter-settings .price-filtr .panel-group .price-slider .line:before {
+.filter-settings .accordion .accordion-content .form-group label:before, .filter-settings .accordion .accordion-content .form-group input[type="checkbox"]:checked + label:before, .filter-settings .accordion .accordion-content .form-group.radio input[type="radio"]:checked + label:before, #modal-home .modal-dialog:before, #modal-catalog .modal-dialog:before, .header-search .logo:before, .footer-nav .logo:before, .range .price-section .price:before, .carusel-inner-wrap .category-block:after, .carusel-inner-wrap .carousel .glyphicon:before, .inform-wrap .block-about-us li:before, .header-contact .links span:before, .filter-settings .accordion .accordion-content .line:before {
   content: "";
   display: inline-block;
 }
@@ -10532,7 +10532,7 @@ input[type='submit'].styler[disabled] {
 }
 
 /* line 130, ../sass/_default-cleses.scss */
-.range h6, .range .price-section .old-price, .range .price-section .price, .filter-settings .price-filtr .panel-heading h4 {
+.range h6, .range .price-section .old-price, .range .price-section .price, .filter-settings .accordion .accordion-header {
   font-size: 1.6em;
   color: #000;
   font-family: "open_sanssemibold";
@@ -10554,22 +10554,22 @@ input[type='submit'].styler[disabled] {
 }
 
 /* line 147, ../sass/_default-cleses.scss */
-.filter-settings .form-group label {
+.filter-settings .accordion .accordion-content .form-group label {
   display: inline-block;
   font-size: 1.4em;
   font-weight: normal;
 }
 /* line 151, ../sass/_default-cleses.scss */
-.filter-settings .form-group label:before {
+.filter-settings .accordion .accordion-content .form-group label:before {
   position: absolute;
 }
 
 /* line 157, ../sass/_default-cleses.scss */
-.filter-settings .form-group input[type="checkbox"], .filter-settings .form-group.radio input[type="radio"] {
+.filter-settings .accordion .accordion-content .form-group input[type="checkbox"], .filter-settings .accordion .accordion-content .form-group.radio input[type="radio"] {
   display: none;
 }
 /* line 160, ../sass/_default-cleses.scss */
-.filter-settings .form-group input[type="checkbox"]:checked + label:before, .filter-settings .form-group.radio input[type="radio"]:checked + label:before {
+.filter-settings .accordion .accordion-content .form-group input[type="checkbox"]:checked + label:before, .filter-settings .accordion .accordion-content .form-group.radio input[type="radio"]:checked + label:before {
   position: absolute;
 }
 
@@ -10698,6 +10698,14 @@ input[type='submit'].styler[disabled] {
   color: #fff;
   border-radius: 3px;
 }
+/* line 265, ../sass/_default-cleses.scss */
+#modal-home .modal-dialog .modal-content .modal-footer .btn:hover, #modal-catalog .modal-dialog .modal-content .modal-footer .btn:hover {
+  background-color: #ca2c37;
+}
+/* line 268, ../sass/_default-cleses.scss */
+#modal-home .modal-dialog .modal-content .modal-footer .btn:active, #modal-catalog .modal-dialog .modal-content .modal-footer .btn:active {
+  background-color: #ba2732;
+}
 
 /* line 2, ../sass/_layout.scss */
 -webkit-input-placeholder {
@@ -10763,13 +10771,13 @@ input[type='submit'].styler[disabled] {
 }
 /* line 42, ../sass/_layout.scss */
 .header-search .search {
-  padding-left: 17px;
   position: relative;
 }
-/* line 45, ../sass/_layout.scss */
+/* line 44, ../sass/_layout.scss */
 .header-search .search button {
   position: absolute;
   top: 11px;
+  left: 17px;
   background-color: transparent;
   font-size: 1.7em;
 }
@@ -10783,13 +10791,13 @@ input[type='submit'].styler[disabled] {
 }
 /* line 59, ../sass/_layout.scss */
 .header-search .search input[type="text"] {
-  width: 255px;
+  width: 270px;
   height: 41px;
   display: inline-block;
   background-color: transparent;
   font-size: 1.7em;
   color: #000;
-  padding-left: 32px;
+  padding-left: 49px;
 }
 /* line 66, ../sass/_layout.scss */
 .header-search .search input[type="text"]:hover {
@@ -11532,11 +11540,31 @@ input[type='submit'].styler[disabled] {
   width: 235px;
   height: 38px;
   outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
-/* line 314, ../sass/_home.scss */
+/* line 312, ../sass/_home.scss */
+#modal-home .modal-dialog .modal-body .form-group select {
+  color: #000;
+}
+/* line 337, ../sass/_home.scss */
 #modal-home .modal-dialog .modal-footer .btn.btn-default {
   background-color: #fff;
   color: #000;
+}
+/* line 340, ../sass/_home.scss */
+#modal-home .modal-dialog .modal-footer .btn.btn-default:hover {
+  background-color: #fff;
+  color: #000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 346, ../sass/_home.scss */
+#modal-home .modal-dialog .modal-footer .btn.btn-default:active {
+  background-color: #fff;
+  color: #000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 /* line 4, ../sass/_catalog.scss */
@@ -11689,42 +11717,40 @@ input[type='submit'].styler[disabled] {
 .filter-settings .sorting i:active {
   color: #ee3643;
 }
-/* line 132, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group .panel-heading {
-  padding: 17px 10px 0 0;
+/* line 131, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-header {
+  padding: 0;
+  margin: 18px 9px 0 0;
+  background-color: #FFF;
+  display: block;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-size: 1.3em;
 }
-/* line 135, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group .panel {
-  margin-bottom: 10px;
-  background-color: #ffffff;
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+/* line 140, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-header i {
+  font-size: 24px;
 }
-/* line 142, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group form {
+/* line 144, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content {
+  display: none;
+}
+/* line 147, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content {
+  height: auto;
   width: 220px;
-}
-/* line 145, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group .panel-body {
-  padding: 15px 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
 }
 /* line 148, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group .slider-wrap {
-  width: 220px;
-  height: 80px;
-  background-color: #f7f3ec;
-  padding: 40px 20px;
-  margin-bottom: 10px;
-}
-/* line 154, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group .price-slider {
-  padding-bottom: 25px;
+.filter-settings .accordion .accordion-content .price-slider {
+  margin-top: 17px;
+  padding-bottom: 0;
 }
 /* line 156, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group .price-slider input[type="text"] {
+.filter-settings .accordion .accordion-content input[type="text"] {
   background-color: #f7f3ec;
-  width: 95px;
+  width: 92px;
   height: 38px;
   font: 1.6em "open_sanslight";
   color: #000;
@@ -11735,27 +11761,35 @@ input[type='submit'].styler[disabled] {
   display: inline-block;
 }
 /* line 167, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group .price-slider span {
+.filter-settings .accordion .accordion-content span {
   outline: none;
 }
 /* line 170, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group .price-slider .line {
+.filter-settings .accordion .accordion-content .slider-wrap {
+  width: 220px;
+  height: 80px;
+  background-color: #f7f3ec;
+  padding: 40px 20px;
+  margin-bottom: 10px;
+}
+/* line 176, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content #slider {
+  margin-top: 0px;
+  height: 2px;
+}
+/* line 180, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content .line {
   display: inline-block;
 }
-/* line 172, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group .price-slider .line:before {
+/* line 182, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content .line:before {
   width: 15px;
   height: 1px;
   background-color: #6b6b6b;
   margin: 0 7px;
 }
-/* line 179, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group .price-slider #slider {
-  margin-top: 0px;
-  height: 2px;
-}
-/* line 184, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group .price-slider .ui-slider .ui-slider-handle {
+/* line 190, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content .ui-slider .ui-slider-handle {
   width: 20px;
   height: 23px;
   background-image: url("../img/circle.png");
@@ -11763,94 +11797,91 @@ input[type='submit'].styler[disabled] {
   border-radius: 50%;
   top: -10px;
 }
-/* line 193, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-group .price-slider .ui-widget-header {
+/* line 199, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content .ui-widget-header {
   background: #00ca74;
   margin-top: 0;
   width: 170px;
   height: 2px;
 }
-/* line 200, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-heading {
-  padding: 10px 0;
-  background-color: #FFF;
-}
-/* line 203, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-heading h4 {
-  text-transform: uppercase;
-}
-/* line 207, ../sass/_catalog.scss */
-.filter-settings .price-filtr .panel-heading i {
-  display: block;
-}
-/* line 212, ../sass/_catalog.scss */
-.filter-settings .form-group {
+/* line 204, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content .form-group {
   position: relative;
   padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
-/* line 217, ../sass/_catalog.scss */
-.filter-settings .form-group label:before {
+/* line 211, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content .form-group label:before {
   background: url("../img/sprite-check.png") no-repeat;
   background-position: -0px -72px;
   width: 23px;
   height: 23px;
-  left: -5px;
+  left: 0px;
 }
-/* line 228, ../sass/_catalog.scss */
-.filter-settings .form-group input[type="checkbox"]:checked + label:before {
+/* line 222, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content .form-group input[type="checkbox"]:checked + label:before {
   background: url("../img/sprite-check.png") no-repeat;
   background-position: -0px -0px;
   width: 27px;
   height: 23px;
 }
-/* line 236, ../sass/_catalog.scss */
-.filter-settings .form-group.radio {
+/* line 230, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content .form-group.radio {
   position: relative;
-  padding-left: 10px;
 }
-/* line 240, ../sass/_catalog.scss */
-.filter-settings .form-group.radio label:before {
+/* line 232, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content .form-group.radio label {
+  padding-left: 5px;
+}
+/* line 234, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content .form-group.radio label:before {
   background: url("../img/sprite-check.png") no-repeat;
   background-position: -0px -23px;
   width: 25px;
   height: 24px;
-  left: -5px;
+  left: 0px;
 }
-/* line 251, ../sass/_catalog.scss */
-.filter-settings .form-group.radio input[type="radio"]:checked + label:before {
+/* line 245, ../sass/_catalog.scss */
+.filter-settings .accordion .accordion-content .form-group.radio input[type="radio"]:checked + label:before {
   background: url("../img/sprite-check.png") no-repeat;
   background-position: -0px -47px;
   width: 25px;
   height: 25px;
 }
-/* line 261, ../sass/_catalog.scss */
+/* line 257, ../sass/_catalog.scss */
 .filter-settings .range {
   margin-top: 20px;
 }
-/* line 263, ../sass/_catalog.scss */
+/* line 259, ../sass/_catalog.scss */
 .filter-settings .range h6 {
   font-size: 1.4em;
 }
-/* line 266, ../sass/_catalog.scss */
+/* line 262, ../sass/_catalog.scss */
 .filter-settings .range .hover-block .green-btn i {
   font-size: 1.4em;
 }
-/* line 269, ../sass/_catalog.scss */
+/* line 265, ../sass/_catalog.scss */
 .filter-settings .range .price-section {
   margin-top: 9px;
 }
+/* line 274, ../sass/_catalog.scss */
+.filter-settings .paginations li:active .active a {
+  border: 1px solid #ee3643;
+  color: #000;
+}
 
-/* line 278, ../sass/_catalog.scss */
+/* line 284, ../sass/_catalog.scss */
 .service-wrap.catalog {
   margin: 60px 0 6px 0;
   padding-top: 63px;
 }
-/* line 281, ../sass/_catalog.scss */
+/* line 287, ../sass/_catalog.scss */
 .service-wrap.catalog p {
   line-height: 24px;
 }
 
-/* line 293, ../sass/_catalog.scss */
+/* line 299, ../sass/_catalog.scss */
 #modal-catalog .modal-dialog .modal-body {
   height: 170px;
   padding-top: 70px;
@@ -11858,14 +11889,28 @@ input[type='submit'].styler[disabled] {
   background: url("../img/modal_window .png") no-repeat;
   background-position: 10% 50%;
 }
-/* line 299, ../sass/_catalog.scss */
+/* line 305, ../sass/_catalog.scss */
 #modal-catalog .modal-dialog .modal-body p {
   text-transform: none;
 }
-/* line 306, ../sass/_catalog.scss */
+/* line 312, ../sass/_catalog.scss */
 #modal-catalog .modal-dialog .modal-footer .btn.btn-default {
   background-color: #f1f1f1;
   color: #000;
+}
+/* line 315, ../sass/_catalog.scss */
+#modal-catalog .modal-dialog .modal-footer .btn.btn-default:hover {
+  background-color: #f1f1f1;
+  color: #000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 321, ../sass/_catalog.scss */
+#modal-catalog .modal-dialog .modal-footer .btn.btn-default:active {
+  background-color: #f1f1f1;
+  color: #000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 /* line 3, ../sass/_range_style.scss */

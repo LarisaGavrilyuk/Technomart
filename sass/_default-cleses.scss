@@ -262,6 +262,12 @@
 					text-transform: uppercase;
 					color: $generalFontColor;
 					border-radius: 3px;
+					&:hover{
+						background-color: $colorRedHover;
+					}
+					&:active{
+						background-color: $colorRedActive;
+					}
 				}
 			}    
 		}
