@@ -198,6 +198,11 @@
 				&.next{
 					width: 140px;
 				}
+				&:focus{
+					border: none;
+					background-color: $generalcolorRed;
+					color: #fff;
+				}	
 				&:hover{
 					border: 1px solid #bdc6ca;
 					color: #000;
@@ -205,12 +210,8 @@
 				&:active{
 					border: 1px solid $generalcolorRed;
 					color: #000;
-				}	
-				&:focus{
-					border: none;
-					background-color: $generalcolorRed;
-					color: #fff;
-				}	
+				}
+				
 			}	
 		}
 }
@@ -272,4 +273,10 @@
 			}    
 		}
 	}
+}
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }

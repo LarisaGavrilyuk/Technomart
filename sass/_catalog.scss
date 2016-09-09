@@ -137,8 +137,13 @@
 			@extend	%h6;
 			text-transform: uppercase;
 			font-size: 1.3em;
+			cursor: pointer;
 			i{
+				display: block;
 				font-size: 24px;
+				&:hover{
+					@extend .fa-rotate-180;
+				}
 			}	
 		}
 		.accordion-content{
@@ -268,16 +273,6 @@
 	}
 	.paginations{
 		@extend %paginations;
-		li{
-			&:active{
-				.active{
-					a{
-						border: 1px solid $generalcolorRed;
-						color: #000;
-					}	
-				}
-			}
-		}
 	}
 }
 .service-wrap{
